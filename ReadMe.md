@@ -5,11 +5,11 @@
 - Hitz Julian
 - Müller Damian
 
-| Datum | Version | Zusammenfassung                                              |
-| ----- | ------- | ------------------------------------------------------------ |
-|       | 0.0.1   | ✍️ Jedes Mal, wenn Sie an dem Projekt arbeiten, fügen Sie hier eine neue Zeile ein und beschreiben in *einem* Satz, was Sie erreicht haben. |
-|       | ...     |                                                              |
-|       | 1.0.0   |                                                              |
+| Datum | Version | Zusammenfassung                                                                                                                          |
+| ----- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+|       | 0.0.1   | Jedes Mal, wenn Sie an dem Projekt arbeiten, fügen Sie hier eine neue Zeile ein und beschreiben in _einem_ Satz, was Sie erreicht haben. |
+|       | ...     |                                                                                                                                          |
+|       | 1.0.0   |                                                                                                                                          |
 
 ## 1 Informieren
 
@@ -21,12 +21,27 @@ Wir erhoffen uns in diesem Projekt die Porzesse von DevOps zu vertiefen, weil wi
 
 ### 1.2 User Stories
 
-| US-№ | Verbindlichkeit | Typ  | Beschreibung                       |
-| ---- | --------------- | ---- | ---------------------------------- |
-| 1    |                 |      | Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️ |
-| ...  |                 |      |                                    |
+| US-№ | Verbindlichkeit | Typ           | Beschreibung                                                                                                                         |
+| ---- | --------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| 1    | Muss            | Funktional    | Als ein User möchte ich, dass die Temperatur der Stadt angezeigt wird, damit ich einschätzen kann, wo ich bin.                       |
+| 2    | Muss            | Funktional    | Als ein User möchte ich, dass die Luftfeuchtigkeit angezeigt wird, damit ich einschätzen kann, wo ich bin.                           |
+| 3    | Muss            | Funkitonal    | Als ein User möchte ich, dass der Luftdruck angezeigt wird, damit ich einschätzen kann, wo ich bin.                                  |
+| 4    | Muss            | Funktional    | Als ein User möchte ich, dass die Höhe in Meter über Meer angezeigt wird, damit ich einschätzen kann, wo ich bin.                    |
+| 5    | Muss            | Funktional    | Als ein User möchte ich, dass die aktuelle Wetterlage angezeigt wird, damit ich einschätzen kann, wo ich bin.                        |
+| 6    | Muss            | Funktional    | Als ein User möchte ich, dass die Windgechwindigkeit angezeigt wird, damit ich einschätzen kann, wo ich bin.                         |
+| 7    | Muss            | Funktional    | Als ein User möchte ich, dass die Windrichtung angezeigt wird, damit ich einschätzen kann,wo ich bin.                                |
+| 8    | Muss            | Funktional    | Als ein User möchte ich, dass die qualität der Luft angezeigt wird, damit ich einschätzen kann, wo ich bin.                          |
+| 9    | Kann            | Funktional    | Als ein User möchte ich, dass vergangene Wetterdaten angezeigt werden, damit ich einschätzen kann, wo ich bin.                       |
+| 10   | Muss            | Funktional    | Als ein User möchte ich, dass ich auf die Karte clicken kann, damit ich eine Stadt auswählen kann.                                   |
+| 11   | Muss            | Qualität      | Als ein User möchte ich, dass die Benutzeroberfläche minimalistisch gestaltet ist, damit die Webapplikation einfach zu bedienen ist. |
+| 12   | Muss            | Qualität      | Als ein Entwickler möchte ich, dass die Coderichtlinien eingehalten werden, damit die Codelesbarkeit erhöht wird.                    |
+| 13   | Muss            | Qualität      | Als ein Entwickler möchte ich, dass die Coderichtlinien eingehalten werden, damit die Codequalität erhöht wird.                      |
+| 14   | Muss            | Randbedingung | Als Auftraggeber möchte ich, dass das Projekt in HTML5, CSS3 und JavaScript entwickelt wird.                                         |
+| 15   | Kann            | Randbedinugng | Als Auftraggeber möchte ich, dass Libraries wie HTML Bootstrap verwendet werden, damit die Weiterentwicklung einfacher wird.         |
+| ...  |                 |               |                                                                                                                                      |
+| ...  |                 |               |                                                                                                                                      |
 
-✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: *Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️*.
+✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: _Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️_.
 
 ### 1.3 Testfälle
 
@@ -48,7 +63,7 @@ Wir erhoffen uns in diesem Projekt die Porzesse von DevOps zu vertiefen, weil wi
 | 1.A  |       |           |              |               |
 | ...  |       |           |              |               |
 
-Total: 
+Total:
 
 ✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, auf die sich das Arbeitspaket bezieht, und `m` von `A` an nach oben buchstabiert. Beispiel: Das dritte Arbeitspaket, das die zweite User Story betrifft, hat also die Nummer `2.C`.
 
