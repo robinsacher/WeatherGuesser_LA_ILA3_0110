@@ -1,6 +1,9 @@
 # Projekt-Dokumentation
 
-✍️ Ihr Gruppenname und Ihre Nachnamen
+- Spycher Elias
+- Sacher Robin
+- Hitz Julian
+- Müller Damian
 
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
