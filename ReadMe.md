@@ -17,7 +17,7 @@
 
 In unserem Projekt verwenden Wir 2 APIs, eine Wetter API und eine Map API. Man sollte auf einer Website anhand der Wetterdaten auf einer Map die dazugehörige Stadt erraten.
 
-Wir erhoffen uns in diesem Projekt erstens die Porzesse von DevOps zu vertiefen, weil wir diese gerade in dem Modul 324. Ausserdem möchten wir lernen, wie wir eine Webapplikation entwickeln können und wie wir in diese Webapplikation verschiedene API's einbinden können. Dies finden wir sehr interessant und möchten es darum vertiefen.
+Wir erhoffen uns in diesem Projekt die Porzesse von DevOps zu vertiefen, weil wir diese gerade in dem Modul 324 behandeln. Ausserdem möchten wir lernen, wie wir eine Webapplikation entwickeln können und wie wir in diese Webapplikation verschiedene API's einbinden können. Dies finden wir sehr interessant und möchten es darum vertiefen.
 
 ### 1.2 User Stories
 
