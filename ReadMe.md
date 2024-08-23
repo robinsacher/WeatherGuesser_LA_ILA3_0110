@@ -33,6 +33,7 @@ Wir erhoffen uns in diesem Projekt die Porzesse von DevOps zu vertiefen, weil wi
 | 8    | Muss            | Funktional    | Als ein User möchte ich, dass die qualität der Luft angezeigt wird, damit ich einschätzen kann, wo ich bin.                          |
 | 9    | Kann            | Funktional    | Als ein User möchte ich, dass vergangene Wetterdaten angezeigt werden, damit ich einschätzen kann, wo ich bin.                       |
 | 10   | Muss            | Funktional    | Als ein User möchte ich, dass ich auf die Karte clicken kann, damit ich eine Stadt auswählen kann.                                   |
+| 10   | Muss            | Funktional    | Als ein User möchte ich, dass wenn Tipp mehr 100 Kilometer von der korrekten Stadt entfernt ist, ich ein rückmeldung bekomme, damit ich weiss, dass mein Tipp zu ungenau war.                                   |
 | 11   | Muss            | Qualität      | Als ein User möchte ich, dass die Benutzeroberfläche minimalistisch gestaltet ist, damit die Webapplikation einfach zu bedienen ist. |
 | 12   | Muss            | Qualität      | Als ein Entwickler möchte ich, dass die Coderichtlinien eingehalten werden, damit die Codelesbarkeit erhöht wird.                    |
 | 13   | Muss            | Qualität      | Als ein Entwickler möchte ich, dass die Coderichtlinien eingehalten werden, damit die Codequalität erhöht wird.                      |
