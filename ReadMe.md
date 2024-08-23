@@ -35,11 +35,12 @@ Wir erhoffen uns in diesem Projekt die Porzesse von DevOps zu vertiefen, weil wi
 | 10   | Muss            | Funktional    | Als ein User möchte ich, dass ich auf die Karte clicken kann, damit ich eine Stadt auswählen kann.                                   |
 | 11   | Muss            | Funktional    | Als ein User möchte ich, dass wenn mein Tipp mehr als 100 Kilometer von der korrekten Stadt entfernt ist, ich ein Rückmeldung bekomme, damit ich weiss, dass mein Tipp zu ungenau war.                                   |
 | 12  |  Muss               | Funktional              | Als ein User möchte ich, dass wenn mein Tipp weniger als 100 Kilometer von der korrekten Stadt entfernt ist, ich eine Rückmeldung bekomme, damit ich weiss, dass mein Tipp genau genug war.                                                                                                                                |
-| 13   | Muss            | Qualität      | Als ein User möchte ich, dass die Benutzeroberfläche minimalistisch gestaltet ist, damit die Webapplikation einfach zu bedienen ist. |
-| 14   | Muss            | Qualität      | Als ein Entwickler möchte ich, dass die Coderichtlinien eingehalten werden, damit die Codelesbarkeit erhöht wird.                    |
-| 15   | Muss            | Qualität      | Als ein Entwickler möchte ich, dass die Coderichtlinien eingehalten werden, damit die Codequalität erhöht wird.                      |
-| 16   | Muss            | Randbedingung | Als Auftraggeber möchte ich, dass das Projekt in HTML5, CSS3 und JavaScript entwickelt wird.                                         |
-| 17   | Kann            | Randbedinugng | Als Auftraggeber möchte ich, dass Libraries wie HTML Bootstrap verwendet werden, damit die Weiterentwicklung einfacher wird.         |
+| 13  |  Muss               | Funktional              | Als ein User möchte ich, dass ich erfahre, welches die korrekte Stadt war, damit kein Missverständnis entsteht, wenn zwei grosse Städte nahe nebeneinander liegen.                                                                                                                                    |
+| 14   | Muss            | Qualität      | Als ein User möchte ich, dass die Benutzeroberfläche minimalistisch gestaltet ist, damit die Webapplikation einfach zu bedienen ist. |
+| 15   | Muss            | Qualität      | Als ein Entwickler möchte ich, dass die Coderichtlinien eingehalten werden, damit die Codelesbarkeit erhöht wird.                    |
+| 16   | Muss            | Qualität      | Als ein Entwickler möchte ich, dass die Coderichtlinien eingehalten werden, damit die Codequalität erhöht wird.                      |
+| 17   | Muss            | Randbedingung | Als Auftraggeber möchte ich, dass das Projekt in HTML5, CSS3 und JavaScript entwickelt wird.                                         |
+| 18   | Kann            | Randbedinugng | Als Auftraggeber möchte ich, dass Libraries wie HTML Bootstrap verwendet werden, damit die Weiterentwicklung einfacher wird.         |
 
 
 ✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: _Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️_.
