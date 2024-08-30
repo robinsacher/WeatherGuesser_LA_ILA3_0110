@@ -88,7 +88,7 @@ Total:
 
 ## 3 Entscheiden
 
-Wir haben soweit keine Entscheidungen getroffen.
+Wir haben keine Entscheidungen getroffen.
 ## 4 Realisieren
 
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
