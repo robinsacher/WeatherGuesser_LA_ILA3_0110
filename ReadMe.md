@@ -65,8 +65,6 @@ Wir erhoffen uns in diesem Projekt die Porzesse von DevOps zu vertiefen, weil wi
 | 17.1 | Programm ist geöffnet | Code wird auf HTML5, CSS3 und JavaScript überprüft     | Code ist mit HTML5, CSS3 und JavaScript geschrieben |
 | 18.1 | Programm ist geöffnet | Code wird auf Libraries überprüft     | Code beinhaltet Libraries |
 
-✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
-
 ### 1.4 Diagramme
 
 ![WeatherGuesser_LA_ILA3_0110_UseCase drawio](https://github.com/user-attachments/assets/314fefdb-ab93-4f4a-a924-878a20f1aee1)
