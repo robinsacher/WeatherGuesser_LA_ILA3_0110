@@ -3,7 +3,7 @@
 - Spycher Elias
 - Sacher Robin
 - Hitz Julian
-- üller Damian
+- Müller Damian
 
 | Datum | Version | Zusammenfassung                                                                                                                          |
 | ----- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
@@ -42,8 +42,6 @@ Wir erhoffen uns in diesem Projekt die Porzesse von DevOps zu vertiefen, weil wi
 | 17   | Muss            | Randbedingung | Als Auftraggeber möchte ich, dass das Projekt in HTML5, CSS3 und JavaScript entwickelt wird.                                                                                                |
 | 18   | Kann            | Randbedinugng | Als Auftraggeber möchte ich, dass Libraries wie HTML Bootstrap verwendet werden, damit die Weiterentwicklung einfacher wird.                                                                |
 
-✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: _Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️_.
-
 ### 1.3 Testfälle
 
 | TC-№ | Ausgangslage       | Eingabe                   | Erwartete Ausgabe                                                                                         |
@@ -62,10 +60,10 @@ Wir erhoffen uns in diesem Projekt die Porzesse von DevOps zu vertiefen, weil wi
 | 12.1 | Daten werden angezeigt  | Stadt auswählen | deine Stadt ist näher als 100 km entfernt |
 | 13.1 | Stadt wurde ausgewählt  | weiter anklicken | die richtige Stadt war ...|
 | 14.1 | Applikation ist gestartet |     | Webapplikation ist einfach zu bedienen |
-| 15.1 | Programm ist geöffnet |      | Coderichtlinien werden eingehalten |
-| 16.1 | Programm ist geöffnet |      | Coderichtlinien werden eingehalten |
-| 17.1 | Programm ist geöffnet |      | Code ist mit HTML5, CSS3 und JavaScript geschrieben |
-| 18.1 | Programm ist geöffnet |      | Code beinhaltet Libraries |
+| 15.1 | Programm ist geöffnet | Code wird auf Richtlinien überprüft      | Coderichtlinien werden eingehalten |
+| 16.1 | Programm ist geöffnet | Code wird auf Richtlinien überprüft      | Coderichtlinien werden eingehalten |
+| 17.1 | Programm ist geöffnet | Code wird auf HTML5, CSS3 und JavaScript überprüft     | Code ist mit HTML5, CSS3 und JavaScript geschrieben |
+| 18.1 | Programm ist geöffnet | Code wird auf Libraries überprüft     | Code beinhaltet Libraries |
 
 ✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
 
