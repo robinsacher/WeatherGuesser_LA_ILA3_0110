@@ -57,15 +57,15 @@ Wir erhoffen uns in diesem Projekt die Porzesse von DevOps zu vertiefen, weil wi
 | 7.1  | Programm gestartet | Playbutton wurde gedrückt | Zufallsort wird ausgesucht und Windrichtung wird in der Liste mit den Informationen angezeigt.            |
 | 8.1  | Programm gestartet | Playbutton wurde gedrückt | Zufallsort wird ausgesucht und Qualität der Luft wird in der Liste mit den Informationen angezeigt.       |
 | 9.1  | Programm gestartet | Playbutton wurde gedrückt | Zufallsort wird ausgesucht und vergangene Wetterdaten wird in der Liste mit den Informationen angezeigt.  |
-| 10.1 |                    |                           |                                                                                                           |
-| 11.1 |                    |                           |                                                                                                           |
-| 12.1 |                    |                           |                                                                                                           |
-| 13.1 |                    |                           |                                                                                                           |
-| 14.1 |                    |                           |                                                                                                           |
-| 15.1 |                    |                           |                                                                                                           |
-| 16.1 |                    |                           |                                                                                                           |
-| 17.1 |                    |                           |                                                                                                           |
-| 18.1 |                    |                           |                                                                                                           |
+| 10.1 | Spiel gestartet  | Stadt auswählen  | richtig oder falsch Meldung |
+| 11.1 | Daten werden angezeigt  | Stadt auswählen | deine Stadt ist weiter als 100 km entfernt |
+| 12.1 | Daten werden angezeigt  | Stadt auswählen | deine Stadt ist näher als 100 km entfernt |
+| 13.1 | Stadt wurde ausgewählt  | weiter anklicken | die richtige Stadt war ...|
+| 14.1 | Applikation ist gestartet |     | Webapplikation ist einfach zu bedienen |
+| 15.1 | Programm ist geöffnet |      | Coderichtlinien werden eingehalten |
+| 16.1 | Programm ist geöffnet |      | Coderichtlinien werden eingehalten |
+| 17.1 | Programm ist geöffnet |      | Code ist mit HTML5, CSS3 und JavaScript geschrieben |
+| 18.1 | Programm ist geöffnet |      | Code beinhaltet Libraries |
 
 ✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
 
