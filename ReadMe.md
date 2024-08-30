@@ -44,26 +44,26 @@ Wir erhoffen uns in diesem Projekt die Porzesse von DevOps zu vertiefen, weil wi
 
 ### 1.3 Testfälle
 
-| TC-№ | Ausgangslage       | Eingabe                   | Erwartete Ausgabe                                                                                         |
-| ---- | ------------------ | ------------------------- | --------------------------------------------------------------------------------------------------------- |
-| 1.1  | Programm gestartet | Playbutton wurde gedrückt | Zufallsort wird ausgesucht und Temperatur wird in der Liste mit den Informationen angezeigt.              |
-| 2.1  | Programm gestartet | Playbutton wurde gedrückt | Zufallsort wird ausgesucht und Luftfeuchtigkeit wird in der Liste mit den Informationen angezeigt.        |
-| 3.1  | Programm gestartet | Playbutton wurde gedrückt | Zufallsort wird ausgesucht und Luftdruck wird in der Liste mit den Informationen angezeigt.               |
-| 4.1  | Programm gestartet | Playbutton wurde gedrückt | Zufallsort wird ausgesucht und Höhe in Meter über Meer wird in der Liste mit den Informationen angezeigt. |
-| 5.1  | Programm gestartet | Playbutton wurde gedrückt | Zufallsort wird ausgesucht und aktuelle Wetterlage wird in der Liste mit den Informationen angezeigt.     |
-| 6.1  | Programm gestartet | Playbutton wurde gedrückt | Zufallsort wird ausgesucht und Windgechwindigkeit wird in der Liste mit den Informationen angezeigt.      |
-| 7.1  | Programm gestartet | Playbutton wurde gedrückt | Zufallsort wird ausgesucht und Windrichtung wird in der Liste mit den Informationen angezeigt.            |
-| 8.1  | Programm gestartet | Playbutton wurde gedrückt | Zufallsort wird ausgesucht und Qualität der Luft wird in der Liste mit den Informationen angezeigt.       |
-| 9.1  | Programm gestartet | Playbutton wurde gedrückt | Zufallsort wird ausgesucht und vergangene Wetterdaten wird in der Liste mit den Informationen angezeigt.  |
-| 10.1 | Spiel gestartet  | Stadt auswählen  | richtig oder falsch Meldung |
-| 11.1 | Daten werden angezeigt  | Stadt auswählen | deine Stadt ist weiter als 100 km entfernt |
-| 12.1 | Daten werden angezeigt  | Stadt auswählen | deine Stadt ist näher als 100 km entfernt |
-| 13.1 | Stadt wurde ausgewählt  | weiter anklicken | die richtige Stadt war ...|
-| 14.1 | Applikation ist gestartet |     | Webapplikation ist einfach zu bedienen |
-| 15.1 | Programm ist geöffnet | Code wird auf Richtlinien überprüft      | Coderichtlinien werden eingehalten |
-| 16.1 | Programm ist geöffnet | Code wird auf Richtlinien überprüft      | Coderichtlinien werden eingehalten |
-| 17.1 | Programm ist geöffnet | Code wird auf HTML5, CSS3 und JavaScript überprüft     | Code ist mit HTML5, CSS3 und JavaScript geschrieben |
-| 18.1 | Programm ist geöffnet | Code wird auf Libraries überprüft     | Code beinhaltet Libraries |
+| TC-№ | Ausgangslage              | Eingabe                                            | Erwartete Ausgabe                                                                                         |
+| ---- | ------------------------- | -------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| 1.1  | Programm gestartet        | Playbutton wurde gedrückt                          | Zufallsort wird ausgesucht und Temperatur wird in der Liste mit den Informationen angezeigt.              |
+| 2.1  | Programm gestartet        | Playbutton wurde gedrückt                          | Zufallsort wird ausgesucht und Luftfeuchtigkeit wird in der Liste mit den Informationen angezeigt.        |
+| 3.1  | Programm gestartet        | Playbutton wurde gedrückt                          | Zufallsort wird ausgesucht und Luftdruck wird in der Liste mit den Informationen angezeigt.               |
+| 4.1  | Programm gestartet        | Playbutton wurde gedrückt                          | Zufallsort wird ausgesucht und Höhe in Meter über Meer wird in der Liste mit den Informationen angezeigt. |
+| 5.1  | Programm gestartet        | Playbutton wurde gedrückt                          | Zufallsort wird ausgesucht und aktuelle Wetterlage wird in der Liste mit den Informationen angezeigt.     |
+| 6.1  | Programm gestartet        | Playbutton wurde gedrückt                          | Zufallsort wird ausgesucht und Windgechwindigkeit wird in der Liste mit den Informationen angezeigt.      |
+| 7.1  | Programm gestartet        | Playbutton wurde gedrückt                          | Zufallsort wird ausgesucht und Windrichtung wird in der Liste mit den Informationen angezeigt.            |
+| 8.1  | Programm gestartet        | Playbutton wurde gedrückt                          | Zufallsort wird ausgesucht und Qualität der Luft wird in der Liste mit den Informationen angezeigt.       |
+| 9.1  | Programm gestartet        | Playbutton wurde gedrückt                          | Zufallsort wird ausgesucht und vergangene Wetterdaten wird in der Liste mit den Informationen angezeigt.  |
+| 10.1 | Spiel gestartet           | Stadt auswählen                                    | richtig oder falsch Meldung                                                                               |
+| 11.1 | Daten werden angezeigt    | Stadt auswählen                                    | deine Stadt ist weiter als 100 km entfernt                                                                |
+| 12.1 | Daten werden angezeigt    | Stadt auswählen                                    | deine Stadt ist näher als 100 km entfernt                                                                 |
+| 13.1 | Stadt wurde ausgewählt    | weiter anklicken                                   | die richtige Stadt war ...                                                                                |
+| 14.1 | Applikation ist gestartet |                                                    | Webapplikation ist einfach zu bedienen                                                                    |
+| 15.1 | Programm ist geöffnet     | Code wird auf Richtlinien überprüft                | Coderichtlinien werden eingehalten                                                                        |
+| 16.1 | Programm ist geöffnet     | Code wird auf Richtlinien überprüft                | Coderichtlinien werden eingehalten                                                                        |
+| 17.1 | Programm ist geöffnet     | Code wird auf HTML5, CSS3 und JavaScript überprüft | Code ist mit HTML5, CSS3 und JavaScript geschrieben                                                       |
+| 18.1 | Programm ist geöffnet     | Code wird auf Libraries überprüft                  | Code beinhaltet Libraries                                                                                 |
 
 ### 1.4 Diagramme
 
@@ -71,20 +71,53 @@ Wir erhoffen uns in diesem Projekt die Porzesse von DevOps zu vertiefen, weil wi
 
 ## 2 Planen
 
-| AP-№ | Frist | Zuständig | Beschreibung | geplante Zeit |
-| ---- | ----- | --------- | ------------ | ------------- |
-| 1.A  |       |           |              |               |
-| ...  |       |           |              |               |
+| AP-№ | Frist      | Zuständig     | Beschreibung                                                                                      | geplante Zeit |
+| ---- | ---------- | ------------- | ------------------------------------------------------------------------------------------------- | ------------- |
+| 1.A  | 27.09.2024 | Robin Sacher  | Integration der Wetter-API zur Abrufung der Temperaturdaten und Implementierung der Anzeige.      | 45 min        |
+| 1.B  | 27.09.2024 | Elias Spycher | Testen und Debuggen der Temperaturanzeige inklusive API-Verbindungen.                             | 10 min        |
+| 2.A  | 27.09.2024 | Julian Hitz   | Integration der Wetter-API zur Abrufung der Luftfeuchtigkeit und Implementierung der Anzeige.     | 45 min        |
+| 2.B  | 27.09.2024 | Damian Müller | Testen und Debuggen der Luftfeuchtigkeitsanzeige inklusive API-Verbindungen.                      | 10 min        |
+| 3.A  | 27.09.2024 | Robin Sacher  | Integration der Wetter-API zur Abrufung des Luftdrucks und Implementierung der Anzeige.           | 45 min        |
+| 3.B  | 27.09.2024 | Elias Spycher | Testen und Debuggen der Luftdruckanzeige inklusive API-Verbindungen.                              | 10 min        |
+| 4.A  | 27.09.2024 | Julian Hitz   | Integration der Wetter-API zur Abrufung der Höhe über Meer und Implementierung der Anzeige.       | 45 min        |
+| 4.B  | 27.09.2024 | Damian Müller | Testen und Debuggen der Höhenanzeige inklusive API-Verbindungen.                                  | 10 min        |
+| 5.A  | 27.09.2024 | Robin Sacher  | Integration der Wetter-API zur Abrufung der aktuellen Wetterlage und Implementierung der Anzeige. | 45 min        |
+| 5.B  | 27.09.2024 | Elias Spycher | Testen und Debuggen der Anzeige der aktuellen Wetterlage inklusive API-Verbindungen.              | 10 min        |
+| 6.A  | 27.09.2024 | Julian Hitz   | Integration der Wetter-API zur Abrufung der Windgeschwindigkeit und Implementierung der Anzeige.  | 45 min        |
+| 6.B  | 27.09.2024 | Damian Müller | Testen und Debuggen der Windgeschwindigkeitsanzeige inklusive API-Verbindungen.                   | 10 min        |
+| 7.A  | 27.09.2024 | Robin Sacher  | Integration der Wetter-API zur Abrufung der Windrichtung und Implementierung der Anzeige.         | 45 min        |
+| 7.B  | 27.09.2024 | Elias Spycher | Testen und Debuggen der Windrichtungsanzeige inklusive API-Verbindungen.                          | 10 min        |
+| 8.A  | 27.09.2024 | Julian Hitz   | Integration der Wetter-API zur Abrufung der Luftqualität und Implementierung der Anzeige.         | 45 min        |
+| 8.B  | 27.09.2024 | Damian Müller | Testen und Debuggen der Luftqualitätsanzeige inklusive API-Verbindungen.                          | 10 min        |
+| 9.A  | 27.09.2024 | Robin Sacher  | Integration der Wetter-API zur Abrufung vergangener Wetterdaten und Implementierung der Anzeige.  | 45 min        |
+| 9.B  | 27.09.2024 | Elias Spycher | Testen und Debuggen der Anzeige vergangener Wetterdaten inklusive API-Verbindungen.               | 10 min        |
+| 10.A | 27.09.2024 | Julian Hitz   | Implementierung der Spiel-Logik zur Stadtwahl und Ausgabe der richtigen oder falschen Meldung.    | 45 min        |
+| 10.B | 27.09.2024 | Damian Müller | Testen und Debuggen der Stadtwahl-Logik.                                                          | 10 min        |
+| 11.A | 27.09.2024 | Robin Sacher  | Implementierung der Logik zur Berechnung der Entfernung zur ausgewählten Stadt (über 100 km).     | 45 min        |
+| 11.B | 27.09.2024 | Elias Spycher | Testen und Debuggen der Entfernungsberechnung (über 100 km).                                      | 10 min        |
+| 12.A | 27.09.2024 | Julian Hitz   | Implementierung der Logik zur Berechnung der Entfernung zur ausgewählten Stadt (unter 100 km).    | 45 min        |
+| 12.B | 27.09.2024 | Damian Müller | Testen und Debuggen der Entfernungsberechnung (unter 100 km).                                     | 10 min        |
+| 13.A | 27.09.2024 | Robin Sacher  | Implementierung der Funktion zur Anzeige der richtigen Stadt nach der Auswahl.                    | 45 min        |
+| 13.B | 27.09.2024 | Elias Spycher | Testen und Debuggen der Anzeige der richtigen Stadt.                                              | 10 min        |
+| 14.A | 27.09.2024 | Julian Hitz   | Evaluation der Benutzerfreundlichkeit der Webapplikation.                                         | 45 min        |
+| 14.B | 27.09.2024 | Damian Müller | Durchführung von Usability-Tests und Erstellung eines Berichts zur Benutzerfreundlichkeit.        | 10 min        |
+| 15.A | 27.09.2024 | Robin Sacher  | Überprüfung des Codes auf Einhaltung der Coderichtlinien.                                         | 45 min        |
+| 15.B | 27.09.2024 | Elias Spycher | Testen und Debuggen basierend auf den Ergebnissen der Coderichtlinienüberprüfung.                 | 10 min        |
+| 16.A | 27.09.2024 | Julian Hitz   | Detaillierte Überprüfung des Codes auf Einhaltung der Coderichtlinien.                            | 45 min        |
+| 16.B | 27.09.2024 | Damian Müller | Testen und Debuggen basierend auf den Ergebnissen der detaillierten Coderichtlinienüberprüfung.   | 10 min        |
+| 17.A | 27.09.2024 | Robin Sacher  | Überprüfung des Codes auf Konformität mit HTML5, CSS3 und JavaScript.                             | 45 min        |
+| 17.B | 27.09.2024 | Elias Spycher | Testen und Debuggen basierend auf den Ergebnissen der HTML5-, CSS3- und JavaScript-Überprüfung.   | 10 min        |
+| 18.A | 27.09.2024 | Julian Hitz   | Überprüfung des Codes auf die Verwendung von Bibliotheken.                                        | 45 min        |
+| 18.B | 27.09.2024 | Damian Müller | Testen und Debuggen basierend auf der Überprüfung der Bibliotheksverwendung.                      | 10 min        |
 
-Total:
+### Total:
 
-✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, auf die sich das Arbeitspaket bezieht, und `m` von `A` an nach oben buchstabiert. Beispiel: Das dritte Arbeitspaket, das die zweite User Story betrifft, hat also die Nummer `2.C`.
-
-✍️ Ein Arbeitspaket sollte etwa 45' für eine Person in Anspruch nehmen. Die totale Anzahl Arbeitspakete sollte etwa Folgendem entsprechen: `Anzahl R-Sitzungen` ╳ `Anzahl Gruppenmitglieder` ╳ `4`. Wenn Sie also zu dritt an einem Projekt arbeiten, für welches zwei R-Sitzungen geplant sind, sollten Sie auf `2` ╳ `3` ╳`4` = `24` Arbeitspakete kommen. Sollten Sie merken, dass Sie hier nicht genügend Arbeitspakte haben, denken Sie sich weitere "Kann"-User Stories für Kapitel 1.2 aus.
+Insgesamt sind es 36 Arbeitspakete.
 
 ## 3 Entscheiden
 
 Wir haben keine Entscheidungen getroffen.
+
 ## 4 Realisieren
 
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
