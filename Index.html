@@ -19,11 +19,6 @@
 <!-- Spielinhalt (anfangs ausgeblendet) -->
 <div class="container" id="gameContainer" style="display: none;">
     <h1>Stadt-Wetter-Daten</h1>
-    <div class="city-info">
-        <p id="selected-city">Ausgewählte Stadt: </p>
-    </div>
-    <button id="randomCity">Zufällige Stadt auswählen</button>
-    <button id="fetchWeather">Wetterdaten abrufen</button>
     <div class="weather-info">
         <p id="condition">Bedingung: </p>
         <p id="temperature">Temperatur: </p>
@@ -35,8 +30,19 @@
     <!-- Hier wird die Google Maps Karte eingefügt -->
     <div id="map"></div>
 
+    <!-- Button zum Bestätigen des Ortes -->
+    <button id="confirmLocation" style="display: none;">Ort bestätigen</button>
+
+    <!-- Bereich zur Anzeige der Distanz -->
+    <div id="distance-info" style="display: none;">
+        <p id="distance">Entfernung: </p>
+    </div>
+
     <!-- Button zur Startseite -->
     <button id="backToMenu">Zur Startseite</button>
+
+    <!-- Button zur nächsten Runde -->
+    <button id="nextRound" style="display: none;">Nächste Runde</button>
 </div>
 
 <script src="Script.js"></script>
