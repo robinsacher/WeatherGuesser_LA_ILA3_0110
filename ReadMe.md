@@ -7,9 +7,11 @@
 
 | Datum | Version | Zusammenfassung                                                                                                                          |
 | ----- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-|       | 0.0.1   | Jedes Mal, wenn Sie an dem Projekt arbeiten, fügen Sie hier eine neue Zeile ein und beschreiben in _einem_ Satz, was Sie erreicht haben. |
-|       | ...     |                                                                                                                                          |
-|       | 1.0.0   |                                                                                                                                          |
+|   31.08.2024    | 0.0.1   | Jedes Mal, wenn Sie an dem Projekt arbeiten, fügen Sie hier eine neue Zeile ein und beschreiben in _einem_ Satz, was Sie erreicht haben. |
+|   06.09.2024    | 0.0.1   | |
+|   13.09.2024    | 0.0.0   | |   
+|   13.09.2024    | 0.0.0   | |
+|   13.09.2024    | 0.0.0   | |
 
 ## 1 Informieren
 
