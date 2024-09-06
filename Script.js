@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     let selectedCity = '';
+    let map;
+    let marker;
 
     // Menü-Button, um das Spiel zu starten
     document.getElementById('startGame').addEventListener('click', function() {
@@ -83,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     }
 
-    // Funktion, um die Wetterdaten für die ausgewählte Stadt abzurufen
+    // Funktion, um die Wetterdaten für die ausgewählte Stadt abzurufen und die Karte zu aktualisieren
     function fetchWeather() {
         if (!selectedCity) {
             alert('Bitte wähle zuerst eine Stadt aus.');
@@ -97,6 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(response => response.json())
             .then(data => {
                 const current = data.current;
+                const location = data.location;
                 const condition = current.condition.text;
                 const temperature = current.temp_c;
                 const humidity = current.humidity;
@@ -109,8 +112,39 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('humidity').textContent = `Luftfeuchtigkeit: ${humidity} %`;
                 document.getElementById('pressure').textContent = `Luftdruck: ${pressure} hPa`;
                 document.getElementById('wind').textContent = `Windgeschwindigkeit: ${wind} km/h`;
+
+                // Aktualisiere die Karte mit den Koordinaten der Stadt
+                updateMap(location.lat, location.lon);
             })
             .catch(error => console.error('Fehler beim Abrufen der Wetterdaten:', error));
+    }
+
+    // Google Maps initialisieren
+    window.initMap = function() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: 0, lng: 0 }, // Initialer Mittelpunkt
+            zoom: 2, // Start-Zoom
+        });
+    };
+
+    // Karte aktualisieren mit neuer Position
+    function updateMap(lat, lon) {
+        const position = { lat: lat, lng: lon };
+
+        // Karte zur neuen Position bewegen
+        map.setCenter(position);
+        map.setZoom(10);
+
+        // Wenn bereits ein Marker vorhanden ist, entferne ihn
+        if (marker) {
+            marker.setMap(null);
+        }
+
+        // Neuen Marker hinzufügen
+        marker = new google.maps.Marker({
+            position: position,
+            map: map,
+        });
     }
 
     // Event-Listener für die Buttons

@@ -98,3 +98,10 @@ button:hover {
     border-radius: 5px;
     display: none;
 }
+
+/* Google Maps-Kartenstil */
+#map {
+    width: 100%;
+    height: 400px; /* Höhe der Karte */
+    margin-top: 20px;
+}
