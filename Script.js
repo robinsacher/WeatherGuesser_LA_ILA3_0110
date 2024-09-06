@@ -1,6 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
     let selectedCity = '';
 
+    // Menü-Button, um das Spiel zu starten
+    document.getElementById('startGame').addEventListener('click', function() {
+        document.getElementById('menu').style.display = 'none';
+        document.getElementById('gameContainer').style.display = 'block';
+    });
+
+    // Button, um zur Startseite zurückzukehren
+    document.getElementById('backToMenu').addEventListener('click', function() {
+        document.getElementById('gameContainer').style.display = 'none';
+        document.getElementById('menu').style.display = 'block';
+    });
+
     // Funktion, um eine zufällige Stadt auszuwählen
     function getRandomCity() {
         fetch('Countries/Cities.json')

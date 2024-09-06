@@ -1,3 +1,4 @@
+/* Allgemeine Stile */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -5,6 +6,39 @@ body {
     padding: 0;
 }
 
+/* Menü-Stil */
+.menu {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.menu h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.menu p {
+    font-size: 18px;
+    color: #555;
+    margin: 20px 0;
+}
+
+.menu button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu button:hover {
+    background-color: #0056b3;
+}
+
+/* Spielcontainer */
 .container {
     max-width: 600px;
     margin: 50px auto;
@@ -13,6 +47,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    display: none; /* Anfangs ausgeblendet */
 }
 
 h1 {
@@ -41,5 +76,14 @@ button {
 }
 
 button:hover {
+    background-color: #0056b3;
+}
+
+
+#backToMenu {
+    background-color: #007bff;
+}
+
+#backToMenu:hover {
     background-color: #0056b3;
 }

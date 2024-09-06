@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stadt-Wetter-Daten</title>
+    <title>Weather Guesser</title>
     <link rel="stylesheet" href="Styles.css">
 </head>
 <body>
-<div class="container">
+
+<!-- Menü -->
+<div class="menu" id="menu">
+    <h1>Willkommen bei Weather Guesser!</h1>
+    <p>Teste dein Wissen über das Wetter in zufällig ausgewählten Städten.</p>
+    <button id="startGame">Zum Spiel</button>
+</div>
+
+<!-- Spielinhalt (anfangs ausgeblendet) -->
+<div class="container" id="gameContainer" style="display: none;">
     <h1>Stadt-Wetter-Daten</h1>
     <div class="city-info">
         <p id="selected-city">Ausgewählte Stadt: </p>
@@ -21,6 +30,9 @@
         <p id="pressure">Luftdruck: </p>
         <p id="wind">Windgeschwindigkeit: </p>
     </div>
+
+    <!-- Button zur Startseite -->
+    <button id="backToMenu">Zur Startseite</button>
 </div>
 
 <script src="Script.js"></script>
