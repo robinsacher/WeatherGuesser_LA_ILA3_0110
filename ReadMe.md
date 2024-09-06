@@ -124,8 +124,42 @@ Wir haben keine Entscheidungen getroffen.
 
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
 | ---- | ----- | --------- | ------------- | ----------------- |
-| 1.A  |       |           |               |                   |
-| ...  |       |           |               |                   |
+| 1.A  |       | Robin Sacher          |   45 min            |                   |
+| 1.B  |       | Robin Sacher          |  10 min             |                   |
+| 2.A |       | Julian Hitz  | 45 min |       |
+| 2.B |       | Julian Hitz  | 10 min     |       |
+| 3.A |       | Elias Spycher | 45 min   |       |
+| 3.B |       | Elias Spycher  | 10 min    |      |
+| 4.A |       | Damian Müller  | 45 min |     |
+| 4.B  |       | Damian Müller | 10 min |      |
+| 5.A |       | Robin Sacher    | 45 min  |         |
+| 5.B |       | Robin Sacher  | 10 min    |       |
+| 6.A  |      | Julian Hitz   | 45 min    |        |
+| 6.B  |      | Julian Hitz   | 10 min   |         |
+| 7.A  |       | Elias Spycher  | 45 min    |        |
+| 7.B  |      | Elias Spycher  | 10 min  |       |
+| 8.A  |      | Damian Müller  | 45 min |      |
+| 8.B  |       | Damian Müller | 10 min  |      |
+| 9.A  |       | Robin Sacher   | 45 min  |       |
+| 9.B |       | Robin Sacher    | 10 min   |       |
+| 10.A  |     | Julian Hitz    | 45 min   |       |
+| 10.B |      | Julian Hitz    | 10 min   |       |
+| 11.A |       | Elias Spycher | 45 min    |      |
+| 11.B |      | Elias Spycher  | 10 min    |      |
+| 12.A |      | Damian Müller  | 45 min    |      |
+| 12.B |      | Damian Müller  | 10 min    |      |
+| 13.A  |     | Robin Sacher    | 45 min   |       |
+| 13.B  |     | Robin Sacher   | 10 min     |     |
+| 14.A  |      | Julian Hitz   | 45 min    |      |
+| 14.B  |     | Julian Hitz    | 10 min    |      |
+| 15.A  |      | Elias Spycher | 45 min    |      |
+| 15.B  |      | Elias Spycher | 10 min    |      |
+| 16.A  |      | Damian Müller  | 45 min   |      |
+| 16.B  |      | Damian Müller | 10 min    |      |
+| 17.A  |      | Robin Sacher   | 45 min    |      |
+| 17.B  |      | Robin Sacher   | 10 min    |     |
+| 18.A  |      | Julian Hitz    | 45 min    |      |
+| 18.B   |     | Julian Hitz    | 10 min    |      |
 
 ✍️ Tragen Sie jedes Mal, wenn Sie ein Arbeitspaket abschließen, hier ein, wie lang Sie effektiv dafür hatten.
 
