@@ -18,31 +18,34 @@
 
 <!-- Spielinhalt (anfangs ausgeblendet) -->
 <div class="container" id="gameContainer" style="display: none;">
-    <h1>Stadt-Wetter-Daten</h1>
-    <div class="weather-info">
-        <p id="condition">Bedingung: </p>
-        <p id="temperature">Temperatur: </p>
-        <p id="humidity">Luftfeuchtigkeit: </p>
-        <p id="pressure">Luftdruck: </p>
-        <p id="wind">Windgeschwindigkeit: </p>
-    </div>
+    <div class="game-content">
+        <!-- Wetterdaten auf der linken Seite -->
+        <div class="weather-section">
+            <h1>Stadt-Wetter-Daten</h1>
+            <div class="city-info">
+                <p id="selected-city">Ausgewählte Stadt: </p>
+            </div>
+            <button id="generateLocation">Generate Location</button>
+            <div class="weather-info">
+                <p id="condition">Bedingung: </p>
+                <p id="temperature">Temperatur: </p>
+                <p id="humidity">Luftfeuchtigkeit: </p>
+                <p id="pressure">Luftdruck: </p>
+                <p id="wind">Windgeschwindigkeit: </p>
+            </div>
+            <button id="guess">Guess</button>
+            <p id="distance"></p> <!-- Bereich für die Distanzanzeige -->
+            <button id="nextRound" style="display: none;">Nächste Runde</button> <!-- Button für die nächste Runde -->
+        </div>
 
-    <!-- Hier wird die Google Maps Karte eingefügt -->
-    <div id="map"></div>
-
-    <!-- Button zum Bestätigen des Ortes -->
-    <button id="confirmLocation" style="display: none;">Ort bestätigen</button>
-
-    <!-- Bereich zur Anzeige der Distanz -->
-    <div id="distance-info" style="display: none;">
-        <p id="distance">Entfernung: </p>
+        <!-- Karte auf der rechten Seite -->
+        <div class="map-section">
+            <div id="map"></div>
+        </div>
     </div>
 
     <!-- Button zur Startseite -->
     <button id="backToMenu">Zur Startseite</button>
-
-    <!-- Button zur nächsten Runde -->
-    <button id="nextRound" style="display: none;">Nächste Runde</button>
 </div>
 
 <script src="Script.js"></script>

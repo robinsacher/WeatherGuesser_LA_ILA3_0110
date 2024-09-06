@@ -1,11 +1,112 @@
 document.addEventListener('DOMContentLoaded', function() {
+    let selectedCity = '';
     let map;
     let marker;
-    let userMarker;
-    let selectedLatLng;
-    let actualLatLng;
-    let actualCity; // Speichert die aktuelle Stadt
-    const apiKey = '6c57147cf6b448a48df84931242308'; // Dein Wetter API-Schlüssel
+    let guessMarker = null;
+    let mapReady = false;
+
+    // Menü-Button, um das Spiel zu starten
+    document.getElementById('startGame').addEventListener('click', function() {
+        document.getElementById('menu').style.display = 'none';
+        document.getElementById('gameContainer').style.display = 'block';
+    });
+
+    // Button, um zur Startseite zurückzukehren
+    document.getElementById('backToMenu').addEventListener('click', function() {
+        document.getElementById('gameContainer').style.display = 'none';
+        document.getElementById('menu').style.display = 'block';
+    });
+
+    // Funktion zur Benachrichtigung
+    const notificationArea = document.createElement('div');
+    notificationArea.setAttribute('id', 'notification');
+    document.body.appendChild(notificationArea);
+
+    function showNotification(message) {
+        notificationArea.textContent = message;
+        notificationArea.style.display = 'block';
+        setTimeout(() => {
+            notificationArea.style.display = 'none';
+        }, 2000);
+    }
+
+    // Funktion, um eine zufällige Stadt auszuwählen und Wetterdaten abzurufen
+    function generateLocation() {
+        fetch('Countries/Cities.json')
+            .then(response => response.json())
+            .then(data => {
+                selectValidCity(data);
+            })
+            .catch(error => console.error('Fehler beim Abrufen der Städte:', error));
+    }
+
+    // Funktion, um eine gültige Stadt mit Wetterdaten auszuwählen
+    function selectValidCity(cities) {
+        if (!cities || cities.length === 0) {
+            console.error('Keine Städte gefunden.');
+            return;
+        }
+
+        function tryCity() {
+            const randomIndex = Math.floor(Math.random() * cities.length);
+            const city = cities[randomIndex].city;
+
+            checkWeatherForCity(city)
+                .then(hasWeather => {
+                    if (hasWeather) {
+                        selectedCity = city;
+                        document.getElementById('selected-city').textContent = `Ausgewählte Stadt: ${selectedCity}`;
+                        fetchWeather();
+                    } else {
+                        showNotification(`Stadt ${city} übersprungen, da keine Wetterdaten verfügbar.`);
+                        tryCity(); // Nächste Stadt versuchen
+                    }
+                })
+                .catch(error => console.error('Fehler bei der Wetterprüfung:', error));
+        }
+
+        tryCity(); // Starte den ersten Versuch
+    }
+
+    // Funktion, um zu überprüfen, ob eine Stadt Wetterdaten hat
+    function checkWeatherForCity(city) {
+        const apiKey = '6c57147cf6b448a48df84931242308'; // Dein API-Schlüssel
+        const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=1&aqi=yes&alerts=yes`;
+
+        return fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                return data && data.location && data.current;
+            })
+            .catch(() => false); // Rückgabewert bei Fehler
+    }
+
+    // Funktion, um das Wetter für die ausgewählte Stadt abzurufen
+    function fetchWeather() {
+        const apiKey = '6c57147cf6b448a48df84931242308'; // Dein API-Schlüssel
+        const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${selectedCity}&days=1&aqi=yes&alerts=yes`;
+
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                const current = data.current;
+                const location = data.location;
+                const condition = current.condition.text;
+                const temperature = current.temp_c;
+                const humidity = current.humidity;
+                const pressure = current.pressure_mb;
+                const wind = current.wind_kph;
+
+                document.getElementById('condition').textContent = `Bedingung: ${condition}`;
+                document.getElementById('temperature').textContent = `Temperatur: ${temperature} °C`;
+                document.getElementById('humidity').textContent = `Luftfeuchtigkeit: ${humidity} %`;
+                document.getElementById('pressure').textContent = `Luftdruck: ${pressure} hPa`;
+                document.getElementById('wind').textContent = `Windgeschwindigkeit: ${wind} km/h`;
+
+                updateMap(location.lat, location.lon);
+            })
+            .catch(error => console.error('Fehler beim Abrufen der Wetterdaten:', error));
+    }
 
     // Google Maps initialisieren
     window.initMap = function() {
@@ -13,122 +114,113 @@ document.addEventListener('DOMContentLoaded', function() {
             center: { lat: 0, lng: 0 }, // Initialer Mittelpunkt
             zoom: 2, // Start-Zoom
         });
+        mapReady = true;
 
-        // Ereignis-Listener für das Klicken auf die Karte
+        // Event-Listener für das Setzen des Markers
         map.addListener('click', function(event) {
-            selectedLatLng = event.latLng;
-            if (marker) {
-                marker.setMap(null);
+            if (!guessMarker) {
+                guessMarker = new google.maps.Marker({
+                    position: event.latLng,
+                    map: map,
+                    title: "Markierter Ort"
+                });
+            } else {
+                guessMarker.setPosition(event.latLng);
             }
-            marker = new google.maps.Marker({
-                position: selectedLatLng,
-                map: map,
-            });
-            document.getElementById('confirmLocation').style.display = 'inline-block';
-        });
-
-        document.getElementById('confirmLocation').addEventListener('click', function() {
-            if (selectedLatLng) {
-                calculateDistance(selectedLatLng.lat(), selectedLatLng.lng(), actualLatLng.lat, actualLatLng.lng);
-                document.getElementById('confirmLocation').style.display = 'none';
-                document.getElementById('nextRound').style.display = 'inline-block';
-            }
-        });
-
-        document.getElementById('nextRound').addEventListener('click', function() {
-            document.getElementById('nextRound').style.display = 'none';
-            fetchRandomCity();
         });
     };
 
-    // Menü-Button, um das Spiel zu starten
-    document.getElementById('startGame').addEventListener('click', function() {
-        document.getElementById('menu').style.display = 'none';
-        document.getElementById('gameContainer').style.display = 'block';
-        fetchRandomCity();
-    });
+    // Karte aktualisieren mit neuer Position
+    function updateMap(lat, lon) {
+        const position = { lat: lat, lng: lon };
 
-    // Button zum Zurückkehren zur Startseite
-    document.getElementById('backToMenu').addEventListener('click', function() {
-        document.getElementById('gameContainer').style.display = 'none';
-        document.getElementById('menu').style.display = 'block';
-    });
+        // Karte zur neuen Position bewegen
+        map.setCenter(position);
+        map.setZoom(10);
 
-    // Funktion, um eine zufällige Stadt auszuwählen
-    function fetchRandomCity() {
-        fetch('Countries/Cities.json')
-            .then(response => response.json())
-            .then(data => {
-                let foundCity = false;
-                while (!foundCity) {
-                    const randomIndex = Math.floor(Math.random() * data.length);
-                    const city = data[randomIndex].city;
-                    actualCity = city;
-                    fetchWeather(city)
-                        .then(() => foundCity = true)
-                        .catch(() => console.log('Keine Wetterdaten für diese Stadt vorhanden, versuche eine andere Stadt.'));
-                }
-            })
-            .catch(error => console.error('Fehler beim Abrufen der Städte:', error));
-    }
+        // Wenn bereits ein Marker vorhanden ist, entferne ihn
+        if (marker) {
+            marker.setMap(null);
+        }
 
-    // Funktion, um die Wetterdaten abzurufen
-    function fetchWeather(city) {
-        return new Promise((resolve, reject) => {
-            const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=1&aqi=yes&alerts=yes`;
-
-            fetch(url)
-                .then(response => response.json())
-                .then(data => {
-                    const current = data.current;
-                    const location = data.location;
-                    const condition = current.condition.text;
-                    const temperature = current.temp_c;
-                    const humidity = current.humidity;
-                    const pressure = current.pressure_mb;
-                    const wind = current.wind_kph;
-
-                    // Zeige die Wetterdaten an
-                    document.getElementById('condition').textContent = `Bedingung: ${condition}`;
-                    document.getElementById('temperature').textContent = `Temperatur: ${temperature} °C`;
-                    document.getElementById('humidity').textContent = `Luftfeuchtigkeit: ${humidity} %`;
-                    document.getElementById('pressure').textContent = `Luftdruck: ${pressure} hPa`;
-                    document.getElementById('wind').textContent = `Windgeschwindigkeit: ${wind} km/h`;
-
-                    // Setze die tatsächliche Position und zeige sie auf der Karte an
-                    actualLatLng = { lat: location.lat, lng: location.lon };
-                    map.setCenter(actualLatLng);
-                    map.setZoom(10);
-                    new google.maps.Marker({
-                        position: actualLatLng,
-                        map: map,
-                        title: 'Tatsächlicher Ort'
-                    });
-
-                    resolve();
-                })
-                .catch(error => reject(error));
+        // Neuen Marker hinzufügen
+        marker = new google.maps.Marker({
+            position: position,
+            map: map,
         });
     }
 
-    // Funktion zur Berechnung der Distanz
+    // Berechne die Distanz zwischen zwei Punkten
     function calculateDistance(lat1, lon1, lat2, lon2) {
-        const R = 6371; // Radius der Erde in km
-        const dLat = toRad(lat2 - lat1);
-        const dLon = toRad(lon2 - lon1);
-        const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-            Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
+        const R = 6371; // Radius der Erde in Kilometern
+        const dLat = (lat2 - lat1) * Math.PI / 180;
+        const dLon = (lon2 - lon1) * Math.PI / 180;
+        const a =
+            Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+            Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
             Math.sin(dLon / 2) * Math.sin(dLon / 2);
         const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-        const distance = R * c;
-
-        // Zeige die Distanz an
-        document.getElementById('distance').textContent = `Entfernung: ${distance.toFixed(2)} km`;
-        document.getElementById('distance-info').style.display = 'block';
+        return R * c;
     }
 
-    // Hilfsfunktion zur Umwandlung von Grad in Bogenmaß
-    function toRad(deg) {
-        return deg * (Math.PI / 180);
-    }
+    // Event-Listener für die Buttons
+    document.getElementById('generateLocation').addEventListener('click', generateLocation);
+    document.getElementById('guess').addEventListener('click', function() {
+        if (!mapReady || !guessMarker) {
+            alert('Bitte markieren Sie zuerst Ihren Ort.');
+            return;
+        }
+
+        // Koordinaten des Markers und des generierten Ortes
+        const guessLat = guessMarker.getPosition().lat();
+        const guessLng = guessMarker.getPosition().lng();
+
+        // Fetch the generated city data to get its coordinates
+        fetch(`https://api.weatherapi.com/v1/forecast.json?key=6c57147cf6b448a48df84931242308&q=${selectedCity}&days=1`)
+            .then(response => response.json())
+            .then(data => {
+                const generatedLat = data.location.lat;
+                const generatedLng = data.location.lon;
+                const distance = calculateDistance(guessLat, guessLng, generatedLat, generatedLng);
+                document.getElementById('distance').textContent = `Distanz zwischen Ihrem Ort und der Stadt: ${distance.toFixed(2)} km`;
+
+                // Deaktiviere die Möglichkeit, den Marker zu ändern
+                google.maps.event.clearListeners(map, 'click');
+                document.getElementById('nextRound').style.display = 'block';
+            })
+            .catch(error => console.error('Fehler beim Abrufen der Koordinaten der Stadt:', error));
+    });
+
+    // Event-Listener für den Button zur nächsten Runde
+    document.getElementById('nextRound').addEventListener('click', function() {
+        // Reset der Variablen und UI
+        selectedCity = '';
+        document.getElementById('selected-city').textContent = 'Ausgewählte Stadt: ';
+        document.getElementById('condition').textContent = 'Bedingung: ';
+        document.getElementById('temperature').textContent = 'Temperatur: ';
+        document.getElementById('humidity').textContent = 'Luftfeuchtigkeit: ';
+        document.getElementById('pressure').textContent = 'Luftdruck: ';
+        document.getElementById('wind').textContent = 'Windgeschwindigkeit: ';
+        document.getElementById('distance').textContent = '';
+
+        if (guessMarker) {
+            guessMarker.setMap(null);
+            guessMarker = null;
+        }
+
+        document.getElementById('nextRound').style.display = 'none';
+
+        // Re-enable map clicks
+        map.addListener('click', function(event) {
+            if (!guessMarker) {
+                guessMarker = new google.maps.Marker({
+                    position: event.latLng,
+                    map: map,
+                    title: "Markierter Ort"
+                });
+            } else {
+                guessMarker.setPosition(event.latLng);
+            }
+        });
+    });
 });
