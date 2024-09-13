@@ -9,24 +9,33 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('startGame').addEventListener('click', function() {
         document.getElementById('menu').style.display = 'none';
         document.getElementById('gameContainer').style.display = 'block';
+        document.getElementById('startGame').style.display = 'none';
+        document.getElementById('zeigeAnleitung').style.display = 'none';
+
     });
     
     // Menu-Button, um die Anleitung aufzurufen
     document.getElementById('zeigeAnleitung').addEventListener('click', function() {
         document.getElementById('menu').style.display = 'none';
         document.getElementById('Anleitung').style.display = 'block';
+        document.getElementById('startGame').style.display = 'none';
+        document.getElementById('zeigeAnleitung').style.display = 'none';
     });
 
     // Button, um von dem Spiel zur Startseite zurückzukehren
     document.getElementById('backToMenu').addEventListener('click', function() {
         document.getElementById('gameContainer').style.display = 'none';
         document.getElementById('menu').style.display = 'block';
+        document.getElementById('startGame').style.display = 'block';
+        document.getElementById('zeigeAnleitung').style.display = 'block';
     });
     
     // Button, um von der Anleitung zur Startseite zurückzukehren
     document.getElementById('backToMenu2').addEventListener('click', function() {
         document.getElementById('Anleitung').style.display = 'none';
         document.getElementById('menu').style.display = 'block';
+        document.getElementById('startGame').style.display = 'block';
+        document.getElementById('zeigeAnleitung').style.display = 'block';
     });
 
     // Funktion zur Benachrichtigung
