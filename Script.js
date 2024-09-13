@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('gameContainer').style.display = 'block';
         document.getElementById('startGame').style.display = 'none';
         document.getElementById('zeigeAnleitung').style.display = 'none';
-
+        document.getElementById('selected-city').style.display = `none`;
     });
     
     // Menu-Button, um die Anleitung aufzurufen
@@ -76,7 +76,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 .then(hasWeather => {
                     if (hasWeather) {
                         selectedCity = city;
-                        document.getElementById('selected-city').textContent = `Ausgewählte Stadt: ${selectedCity}`;
                         fetchWeather();
                     } else {
                         showNotification(`Stadt ${city} übersprungen, da keine Wetterdaten verfügbar.`);
@@ -101,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .catch(() => false); // Rückgabewert bei Fehler
     }
-
+    
     // Funktion, um das Wetter für die ausgewählte Stadt abzurufen
     function fetchWeather() {
         const apiKey = '6c57147cf6b448a48df84931242308'; // Dein API-Schlüssel
@@ -177,8 +176,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const position = { lat: lat, lng: lon };
 
         // Karte zur neuen Position bewegen
-        map.setCenter(position);
-        map.setZoom(10);
+        map.setCenter(0, 0);
+        map.setZoom(4);
 
         // Wenn bereits ein Marker vorhanden ist, entferne ihn
         if (marker) {
@@ -189,6 +188,7 @@ document.addEventListener('DOMContentLoaded', function() {
         marker = new google.maps.Marker({
             position: position,
             map: map,
+            visible: false
         });
     }
 
@@ -224,7 +224,29 @@ document.addEventListener('DOMContentLoaded', function() {
                 const generatedLat = data.location.lat;
                 const generatedLng = data.location.lon;
                 const distance = calculateDistance(guessLat, guessLng, generatedLat, generatedLng);
+
+                // Anzeige der Distanz
                 document.getElementById('distance').textContent = `Distanz zwischen Ihrem Ort und der Stadt: ${distance.toFixed(2)} km`;
+
+                // Anzeige der ausgewählten Stadt
+                document.getElementById('selected-city').style.display = 'block';
+                document.getElementById('selected-city').textContent = `Ausgewählte Stadt: ${selectedCity}`;
+
+                // Karte aktualisieren, um die Stadt anzuzeigen
+                if (!marker) {
+                    marker = new google.maps.Marker({
+                        position: { lat: generatedLat, lng: generatedLng },
+                        map: map,
+                        visible: true // Stelle sicher, dass der Marker sichtbar ist
+                    });
+                } else {
+                    marker.setPosition({ lat: generatedLat, lng: generatedLng });
+                    marker.setVisible(true); // Mache den Marker sichtbar
+                }
+
+                // Karte zentrieren und zoomen
+                map.setCenter({ lat: generatedLat, lng: generatedLng });
+                map.setZoom(10);
 
                 // Deaktiviere die Möglichkeit, den Marker zu ändern
                 google.maps.event.clearListeners(map, 'click');
@@ -232,6 +254,7 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .catch(error => console.error('Fehler beim Abrufen der Koordinaten der Stadt:', error));
     });
+
 
     // Event-Listener für den Button zur nächsten Runde
     document.getElementById('nextRound').addEventListener('click', function() {
@@ -255,6 +278,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
         document.getElementById('distance').textContent = '';
 
+        document.getElementById('selected-city').style.display = `none`;
+        
         if (guessMarker) {
             guessMarker.setMap(null);
             guessMarker = null;
