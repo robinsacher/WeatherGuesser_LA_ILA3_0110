@@ -167,8 +167,24 @@ Wir haben keine Entscheidungen getroffen.
 
 | TC-№ | Datum | Resultat | Tester |
 | ---- | ----- | -------- | ------ |
-| 1.1  |       |          |        |
-| ...  |       |          |        |
+| 1.1  |  13.09.2024     |     OK     |    Elias Spycher    |
+| 2.1  |  13.09.2024     |     OK     |    Elias Spycher    |
+| 3.1  |  13.09.2024     |     OK     |    Elias Spycher    |
+| 4.1  |  13.09.2024     |     NOK     |    Elias Spycher    |
+| 5.1  |  13.09.2024     |     OK     |    Elias Spycher    |
+| 6.1  |  13.09.2024     |     OK     |    Elias Spycher    |
+| 7.1  |  13.09.2024     |     OK     |    Elias Spycher    |
+| 8.1  |  13.09.2024     |     OK     |    Elias Spycher    |
+| 9.1  |       |          |    Elias Spycher    |
+| 10.1  |       |          |   Elias Spycher     |
+| 11.1  |       |          |   Elias Spycher     |
+| 12.1  |       |          |   Elias Spycher     |
+| 13.1  | 13.09.2024      |     OK     |   Elias Spycher     |
+| 14.1  | 13.09.2024      |     OK     |   Elias Spycher     |
+| 15.1  | 13.09.2024      |     OK     |   Elias Spycher     |
+| 16.1  | 13.09.2024      |     OK     |   Elias Spycher     |
+| 17.1  | 13.09.2024      |     OK     |   Elias Spycher     |
+| 18.1  | 13.09.2024      |     NOK     |   Elias Spycher     |
 
 ✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
 
