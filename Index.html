@@ -13,7 +13,8 @@
 <div class="menu" id="menu">
     <h1>Willkommen bei Weather Guesser!</h1>
     <p>Teste dein Wissen über das Wetter in zufällig ausgewählten Städten.</p>
-    <button id="startGame">Zum Spiel</button>
+    <button class="button" id="startGame">Zum Spiel</button>
+    <button class="button" id="zeigeAnleitung">Anleitung</button>
 </div>
 
 <!-- Spielinhalt (anfangs ausgeblendet) -->
@@ -25,7 +26,7 @@
             <div class="city-info">
                 <p id="selected-city">Ausgewählte Stadt: </p>
             </div>
-            <button id="generateLocation">Generate Location</button>
+            <button class="button" id="generateLocation">Generate Location</button>
             <div class="weather-info">
                 <p id="condition">Bedingung: </p>
                 <p id="temperature">Temperatur: </p>
@@ -33,7 +34,7 @@
                 <p id="pressure">Luftdruck: </p>
                 <p id="wind">Windgeschwindigkeit: </p>
             </div>
-            <button id="guess">Guess</button>
+            <button class="button" id="guess">Guess</button>
             <p id="distance"></p> <!-- Bereich für die Distanzanzeige -->
             <button id="nextRound" style="display: none;">Nächste Runde</button> <!-- Button für die nächste Runde -->
         </div>
@@ -45,7 +46,14 @@
     </div>
 
     <!-- Button zur Startseite -->
-    <button id="backToMenu">Zur Startseite</button>
+    <button class="button" id="backToMenu">Zur Startseite</button>
+</div>
+
+<div class="container" id="Anleitung" style="display: none">
+    <p>
+        Hier folgt die Spielanleitung, in der alles erklärt wird.
+        <button class="button" id="backToMenu2">Zur Startseite</button>
+    </p>
 </div>
 
 <script src="Script.js"></script>
