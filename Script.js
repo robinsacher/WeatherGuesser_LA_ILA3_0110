@@ -103,21 +103,42 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(data => {
                 const current = data.current;
                 const location = data.location;
+
                 const condition = current.condition.text;
                 const temperature = current.temp_c;
                 const humidity = current.humidity;
                 const pressure = current.pressure_mb;
                 const wind = current.wind_kph;
+                const windDir = current.wind_dir;
+                const visibility = current.vis_km;
+                const uv = current.uv;
+                const rain = current.precip_mm;
+                const airQuality = current.air_quality;
+                const co = airQuality.co.toFixed(2); 
+                const o3 = airQuality.o3.toFixed(2); 
+                const pm25 = airQuality.pm2_5.toFixed(2); 
+                const pm10 = airQuality.pm10.toFixed(2); 
 
+                // Wetterdaten in den HTML-Elementen anzeigen
                 document.getElementById('condition').textContent = `Bedingung: ${condition}`;
                 document.getElementById('temperature').textContent = `Temperatur: ${temperature} °C`;
                 document.getElementById('humidity').textContent = `Luftfeuchtigkeit: ${humidity} %`;
                 document.getElementById('pressure').textContent = `Luftdruck: ${pressure} hPa`;
                 document.getElementById('wind').textContent = `Windgeschwindigkeit: ${wind} km/h`;
+                document.getElementById('direction').textContent = `Windrichtung: ${windDir}`;
+                document.getElementById('visibility').textContent = `Sichtweite: ${visibility} km`;
+                document.getElementById('uv').textContent = `UV-Index: ${uv}`;
+                document.getElementById('rain').textContent = `Niederschlag: ${rain} mm`;
+                document.getElementById('co').textContent = `Kohlenmonoxid: ${co} µg/m³`;
+                document.getElementById('o3').textContent = `Ozon: ${o3} µg/m³`;
+                document.getElementById('pm25').textContent = `Feinstaub (PM2.5): ${pm25} µg/m³`;
+                document.getElementById('pm10').textContent = `Grober Feinstaub (PM10): ${pm10} µg/m³`;
 
+                // Karte aktualisieren
                 updateMap(location.lat, location.lon);
             })
             .catch(error => console.error('Fehler beim Abrufen der Wetterdaten:', error));
+
     }
 
     // Google Maps initialisieren
@@ -208,11 +229,21 @@ document.addEventListener('DOMContentLoaded', function() {
         // Reset der Variablen und UI
         selectedCity = '';
         document.getElementById('selected-city').textContent = 'Ausgewählte Stadt: ';
+
         document.getElementById('condition').textContent = 'Bedingung: ';
         document.getElementById('temperature').textContent = 'Temperatur: ';
         document.getElementById('humidity').textContent = 'Luftfeuchtigkeit: ';
         document.getElementById('pressure').textContent = 'Luftdruck: ';
         document.getElementById('wind').textContent = 'Windgeschwindigkeit: ';
+        document.getElementById('direction').textContent = 'Windrichtung: ';
+        document.getElementById('visibility').textContent = 'Sichtweite: ';
+        document.getElementById('uv').textContent = 'UV-Index: ';
+        document.getElementById('rain').textContent = 'Niederschlag: ';
+        document.getElementById('co').textContent = 'Kohlenmonoxid: ';
+        document.getElementById('o3').textContent = 'Ozon: ';
+        document.getElementById('pm25').textContent = 'Feinstaub (PM2.5): ';
+        document.getElementById('pm10').textContent = 'Grober Feinstaub (PM10): ';
+        
         document.getElementById('distance').textContent = '';
 
         if (guessMarker) {
