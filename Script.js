@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('startGame').style.display = 'none';
         document.getElementById('zeigeAnleitung').style.display = 'none';
         document.getElementById('selected-city').style.display = `none`;
+
+        generateLocation();
     });
     
     // Menu-Button, um die Anleitung aufzurufen
@@ -206,7 +208,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Event-Listener für die Buttons
-    document.getElementById('generateLocation').addEventListener('click', generateLocation);
     document.getElementById('guess').addEventListener('click', function() {
         if (!mapReady || !guessMarker) {
             alert('Bitte markieren Sie zuerst Ihren Ort.');
@@ -286,6 +287,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         document.getElementById('nextRound').style.display = 'none';
+
+        generateLocation();
 
         // Re-enable map clicks
         map.addListener('click', function(event) {
