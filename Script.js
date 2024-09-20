@@ -226,9 +226,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 const generatedLng = data.location.lon;
                 const distance = calculateDistance(guessLat, guessLng, generatedLat, generatedLng);
 
-                // Anzeige der Distanz
-                document.getElementById('distance').textContent = `Distanz zwischen Ihrem Ort und der Stadt: ${distance.toFixed(2)} km`;
-
+                if (distance > 100) {
+                    document.getElementById('distance').innerHTML = `Distanz zwischen Ihrem Ort und der Stadt: <span style="color: red;">${distance.toFixed(2)} km</span> - Ihr Tipp ist zu ungenau.`;
+                } else {
+                    document.getElementById('distance').innerHTML = `Distanz zwischen Ihrem Ort und der Stadt: <span style="color: green;">${distance.toFixed(2)} km</span> - Gut geraten!`;
+                }
+                
                 // Anzeige der ausgewählten Stadt
                 document.getElementById('selected-city').style.display = 'block';
                 document.getElementById('selected-city').textContent = `Ausgewählte Stadt: ${selectedCity}`;
