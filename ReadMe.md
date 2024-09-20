@@ -97,16 +97,11 @@ Wir erhoffen uns in diesem Projekt die Porzesse von DevOps zu vertiefen, weil wi
 | 12.B | 27.09.2024 | Damian Müller | Testen und Debuggen der Entfernungsberechnung (unter 100 km).                                     | 10 min        |
 | 13.A | 27.09.2024 | Robin Sacher  | Implementierung der Funktion zur Anzeige der richtigen Stadt nach der Auswahl.                    | 45 min        |
 | 13.B | 27.09.2024 | Robin Sacher  | Testen und Debuggen der Anzeige der richtigen Stadt.                                              | 10 min        |
-| 14.A | 27.09.2024 | Julian Hitz   | Evaluation der Benutzerfreundlichkeit der Webapplikation.                                         | 45 min        |
-| 14.B | 27.09.2024 | Julian Hitz   | Durchführung von Usability-Tests und Erstellung eines Berichts zur Benutzerfreundlichkeit.        | 10 min        |
+| 14.A | 27.09.2024 | Julian Hitz   | Implementierung von Don Norman Prinzipien in der Webapplikation.                                  | 45 min        |
+| 14.B | 27.09.2024 | Julian Hitz   | Durchführung von Test für Don Norman Prinzipien.                                                  | 10 min        |
 | 15.A | 27.09.2024 | Elias Spycher | Überprüfung des Codes auf Einhaltung der Coderichtlinien.                                         | 45 min        |
 | 15.B | 27.09.2024 | Elias Spycher | Testen und Debuggen basierend auf den Ergebnissen der Coderichtlinienüberprüfung.                 | 10 min        |
-| 16.A | 27.09.2024 | Damian Müller | Detaillierte Überprüfung des Codes auf Einhaltung der Coderichtlinien.                            | 45 min        |
-| 16.B | 27.09.2024 | Damian Müller | Testen und Debuggen basierend auf den Ergebnissen der detaillierten Coderichtlinienüberprüfung.   | 10 min        |
-| 17.A | 27.09.2024 | Robin Sacher  | Überprüfung des Codes auf Konformität mit HTML5, CSS3 und JavaScript.                             | 45 min        |
-| 17.B | 27.09.2024 | Robin Sacher  | Testen und Debuggen basierend auf den Ergebnissen der HTML5-, CSS3- und JavaScript-Überprüfung.   | 10 min        |
-| 18.A | 27.09.2024 | Julian Hitz   | Überprüfung des Codes auf die Verwendung von Bibliotheken.                                        | 45 min        |
-| 18.B | 27.09.2024 | Julian Hitz   | Testen und Debuggen basierend auf der Überprüfung der Bibliotheksverwendung.                      | 10 min        |
+
 
 ### Total:
 
