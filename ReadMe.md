@@ -144,13 +144,8 @@ Wir haben keine Entscheidungen getroffen.
 | 14.A  | 13.09.2024     | Julian Hitz   | 45 min    |      |
 | 14.B  | 13.09.2024    | Julian Hitz    | 10 min    |      |
 | 15.A  | 13.09.2024| Elias Spycher | 45 min    |      |
-| 15.B  |      | Elias Spycher | 10 min    |      |
-| 16.A  |      | Damian Müller  | 45 min   |      |
-| 16.B  |      | Damian Müller | 10 min    |      |
-| 17.A  |      | Robin Sacher   | 45 min    |      |
-| 17.B  |      | Robin Sacher   | 10 min    |     |
-| 18.A  |      | Julian Hitz    | 45 min    |      |
-| 18.B  |      | Julian Hitz    | 10 min    |      |
+| 15.B  | 13.09.2024     | Elias Spycher | 10 min    |      |
+
 
 ✍️ Tragen Sie jedes Mal, wenn Sie ein Arbeitspaket abschließen, hier ein, wie lang Sie effektiv dafür hatten.
 
