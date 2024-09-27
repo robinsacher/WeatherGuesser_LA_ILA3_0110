@@ -166,10 +166,10 @@ Wir haben keine Entscheidungen getroffen.
 | 6.1  |  13.09.2024     |     OK     |    Elias Spycher    |
 | 7.1  |  13.09.2024     |     OK     |    Elias Spycher    |
 | 8.1  |  13.09.2024     |     OK     |    Elias Spycher    |
-| 9.1  |       |          |    Elias Spycher    |
-| 10.1  |       |          |   Elias Spycher     |
-| 11.1  |       |          |   Elias Spycher     |
-| 12.1  |       |          |   Elias Spycher     |
+| 9.1  | 27.09.2024      |          |    Elias Spycher    |
+| 10.1  | 27.09.2024      |          |   Elias Spycher     |
+| 11.1  |  27.09.2024     |          |   Elias Spycher     |
+| 12.1  |  27.09.2024     |          |   Elias Spycher     |
 | 13.1  | 13.09.2024      |     OK     |   Elias Spycher     |
 | 14.1  | 13.09.2024      |     OK     |   Elias Spycher     |
 | 15.1  | 13.09.2024      |     OK     |   Elias Spycher     |
