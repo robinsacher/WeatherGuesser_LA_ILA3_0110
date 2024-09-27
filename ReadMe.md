@@ -173,9 +173,6 @@ Wir haben keine Entscheidungen getroffen.
 | 13.1  | 13.09.2024      |     OK     |   Elias Spycher     |
 | 14.1  | 13.09.2024      |     OK     |   Elias Spycher     |
 | 15.1  | 13.09.2024      |     OK     |   Elias Spycher     |
-| 16.1  | 13.09.2024      |     OK     |   Elias Spycher     |
-| 17.1  | 13.09.2024      |     OK     |   Elias Spycher     |
-| 18.1  | 13.09.2024      |     NOK     |   Elias Spycher     |
 
 ✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
 
