@@ -115,8 +115,8 @@ Wir haben keine Entscheidungen getroffen.
 
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
 | ---- | ----- | --------- | ------------- | ----------------- |
-| 1.A  |       | Robin Sacher          |   45 min            |                   |
-| 1.B  |       | Robin Sacher          |  10 min             |                   |
+| 1.A  | 30.08.2024      | Robin Sacher          |   45 min       |                   |
+| 1.B  | 30.08.2024       | Robin Sacher          |  10 min         |                   |
 | 2.A |       | Julian Hitz  | 45 min |       |
 | 2.B |       | Julian Hitz  | 10 min     |       |
 | 3.A |       | Elias Spycher | 45 min   |       |
