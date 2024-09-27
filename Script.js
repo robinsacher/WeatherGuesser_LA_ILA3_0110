@@ -45,6 +45,14 @@ document.addEventListener('DOMContentLoaded', function() {
     notificationArea.setAttribute('id', 'notification');
     document.body.appendChild(notificationArea);
 
+    const customCityIcon = {
+        url: 'Marker/SolutionmarkerScale1.png', // URL zum benutzerdefinierten Icon für die ausgewählte Stadt
+    };
+
+    const customGuessIcon = {
+        url: 'Marker/GuessmarkerScale1.png', // URL zum benutzerdefinierten Icon für den geschätzten Ort
+    };
+
     function showNotification(message) {
         notificationArea.textContent = message;
         notificationArea.style.display = 'block';
@@ -165,6 +173,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 guessMarker = new google.maps.Marker({
                     position: event.latLng,
                     map: map,
+                    icon: customGuessIcon,
                     title: "Markierter Ort"
                 });
             } else {
@@ -190,6 +199,7 @@ document.addEventListener('DOMContentLoaded', function() {
         marker = new google.maps.Marker({
             position: position,
             map: map,
+            icon: customCityIcon,
             visible: false
         });
     }
@@ -240,6 +250,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (!marker) {
                     marker = new google.maps.Marker({
                         position: { lat: generatedLat, lng: generatedLng },
+                        icon: customCityIcon,
                         map: map,
                         visible: true // Stelle sicher, dass der Marker sichtbar ist
                     });
@@ -299,6 +310,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 guessMarker = new google.maps.Marker({
                     position: event.latLng,
                     map: map,
+                    icon: customGuessIcon,
                     title: "Markierter Ort"
                 });
             } else {
