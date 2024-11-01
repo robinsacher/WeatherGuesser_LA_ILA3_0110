@@ -6,12 +6,13 @@
 
 | Datum | Version | Zusammenfassung                                                                                                                          |
 | ----- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-|   31.08.2024    | 0.0.1   | Jedes Mal, wenn Sie an dem Projekt arbeiten, fügen Sie hier eine neue Zeile ein und beschreiben in _einem_ Satz, was Sie erreicht haben. |
-|   06.09.2024    | 0.1.1   | Elias Spycher hat direkt mit dem Realisiseren des Projekts begonnen, Robin Sacher, Julian Hitz und Damian Müller haben weiterhin an der Planung gearbeitet.|
-|   13.09.2024    | 1.0.0   | Elias Spycher hat die Grundstruktur des programms erstellt und die beiden APIs implementiert, somit kann man jetzt raten und Wetterdaten werden generiert.|   
-|   20.09.2024    | 1.1.0   | |
-|   27.09.2024    | 1.2.0   | |
-|   01.11.2024    | 1.3.0   | |
+|   23.08.2024    | 0.0.0   | Projekt Idee wurde in der Gruppe ausgesucht, Elias Spycher hat angefangen mit dem Realisieren, hauptsächlich das testen von verschiedenen APIs und erstellen der files. Julian Hitz, Damian Müller und Robin Sacher haben mit dem Planen und Informieren begonnen, Robin hat den Projektantrag mit Julian Hitz und Damian Müller erstellt|
+|   30.08.2024    | 0.1.0   | Elias Spycher hat begonnen die Grundstruktur zu erstellen, Robin, Julian und Damian haben weiterhin geplant und dokumentiert |
+|   06.09.2024    | 1.0.1   | Elias Spycher hat die Grundstruktur des programms erstellt und die beiden APIs implementiert, somit kann man jetzt raten und Wetterdaten werden generiert. Damian Müller hat die Startseite erstell, Robin Sacher hat mit der DOM Manlipulation begonnen und mit Julian Hitz weiter geplant |
+|   13.09.2024    | 1.0.2   | Elias Spycher hat mit dem testen begonnen und dokumentiert, Damian Müller, Robin Sacher und Julian Hitz haben weiterhin die Anforderungen implementiert, Damian hat Text Elemente hinzugefügt, Robin hat DOM Manipulation abgeschlossen. |   
+|   20.09.2024    | 1.1.0   | Robin hat die Usablity mit einer stabilieren Version verbessert, Damian hat weiterhin mit Elias und Julian dokumentiert, darunter Testfälle verbessert, Anforderungen verbessert etc.|
+|   27.09.2024    | 1.2.0   | Elias hat custom markers hinzugefügt, Dokumentation wurde von allen verbssert.|
+|   01.11.2024    | 1.3.0   | Berichte geschrieben von allen, Robin hat Testen abgeschlossen, Don Norman und Usability Verbesserungen von Damian und Julian. Versionierung von Elias überarbeitet.|
 
 ## 1 Informieren
 ### 1.1 Ihr Projekt
