@@ -177,4 +177,4 @@ Für zukünftige Entwicklungen des Projekts könnte man folgende Erweiterungen i
 - Elias Spycher: https://portfolio.bbbaden.ch/view/view.php?t=c10013c399a4ae1be37d
 - Robin Sacher: https://portfolio.bbbaden.ch/view/view.php?t=b03c0b95ee77390232cf
 - Julian Hitz: 
-- Damian Müller: 
+- Damian Müller: https://portfolio.bbbaden.ch/view/view.php?t=27ca37a483a1548a3b3b
