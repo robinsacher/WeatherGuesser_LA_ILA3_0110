@@ -174,7 +174,7 @@ Für zukünftige Entwicklungen des Projekts könnten mehrere interessante Erweit
 - Levels und Punktesystem: Eine gamifizierte Struktur könnte implementiert werden, bei der Nutzer durch das Erreichen bestimmter Meilensteine Punkte sammeln oder Levels aufsteigen können. Dies würde die Interaktivität erhöhen und die Nutzerbindung stärken.
 
 ## 6 Auswerten
-- Elias Spycher: 
+- Elias Spycher: https://portfolio.bbbaden.ch/view/view.php?t=c10013c399a4ae1be37d
 - Robin Sacher: https://portfolio.bbbaden.ch/view/view.php?t=b03c0b95ee77390232cf
 - Julian Hitz: 
 - Damian Müller: 
