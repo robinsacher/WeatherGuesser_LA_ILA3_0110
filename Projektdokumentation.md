@@ -154,15 +154,22 @@ Ansonsten haben wir uns nicht entschieden, Teile des Projekts wegzulassen oder n
 | 6.1  |  13.09.2024     |     OK     |    Elias Spycher    |
 | 7.1  |  13.09.2024     |     OK     |    Elias Spycher    |
 | 8.1  |  13.09.2024     |     OK     |    Elias Spycher    |
-| 9.1  | 27.09.2024      |          |    Elias Spycher    |
-| 10.1  | 27.09.2024      |          |   Elias Spycher     |
-| 11.1  |  27.09.2024     |          |   Elias Spycher     |
-| 12.1  |  27.09.2024     |          |   Elias Spycher     |
+| 9.1  | 27.09.2024      |     OK     |    Robin Sacher    |
+| 10.1  | 27.09.2024      |     OK     |   Robin Sacher     |
+| 11.1  |  27.09.2024     |     OK     |   Robin Sacher     |
+| 12.1  |  27.09.2024     |     OK     |   Robin Sacher     |
 | 13.1  | 13.09.2024      |     OK     |   Elias Spycher     |
 | 14.1  | 13.09.2024      |     OK     |   Elias Spycher     |
 | 15.1  | 13.09.2024      |     OK     |   Elias Spycher     |
 
-✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
+Aktuell sind nicht alle Tests erfolgreich, da die Anzeige der Höhe in Metern über dem Meeresspiegel noch nicht implementiert wurde. Um diese Funktionalität zu realisieren, wäre die Anbindung an eine zusätzliche API erforderlich, die die entsprechenden Daten bereitstellt. Abgesehen von diesem Punkt erfüllen alle anderen Tests die festgelegten Anforderungen, was darauf hinweist, dass die Kernfunktionen des Projekts stabil und funktionsfähig sind.
+
+Für zukünftige Entwicklungen des Projekts könnten mehrere interessante Erweiterungen in Betracht gezogen werden:
+- Höhenangabe über den Meeresspiegel: Die Implementierung einer API, die die Höhe eines bestimmten Standorts über dem Meeresspiegel anzeigt, könnte den Nutzern zusätzliche Informationen bieten und den Wert der Anwendung erhöhen.
+
+- Erweiterte Standortinformationen: Neben der Höhe könnten auch weitere relevante Daten über den Ort hinzugefügt werden, wie z. B. das Klima, die Bevölkerung, Sehenswürdigkeiten oder kulturelle Besonderheiten. Diese Informationen könnten das Nutzererlebnis bereichern und die Anwendung informativer gestalten.
+
+- Levels und Punktesystem: Eine gamifizierte Struktur könnte implementiert werden, bei der Nutzer durch das Erreichen bestimmter Meilensteine Punkte sammeln oder Levels aufsteigen können. Dies würde die Interaktivität erhöhen und die Nutzerbindung stärken.
 
 ## 6 Auswerten
 - Elias Spycher: 
