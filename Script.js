@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let guessMarker = null;
     let mapReady = false;
 
-    // Menü-Button, um das Spiel zu starten
     document.getElementById('startGame').addEventListener('click', function() {
         document.getElementById('menu').style.display = 'none';
         document.getElementById('gameContainer').style.display = 'block';
@@ -16,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
         generateLocation();
     });
     
-    // Menu-Button, um die Anleitung aufzurufen
     document.getElementById('zeigeAnleitung').addEventListener('click', function() {
         document.getElementById('menu').style.display = 'none';
         document.getElementById('Anleitung').style.display = 'block';
@@ -24,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('zeigeAnleitung').style.display = 'none';
     });
 
-    // Button, um von dem Spiel zur Startseite zurückzukehren
     document.getElementById('backToMenu').addEventListener('click', function() {
         document.getElementById('gameContainer').style.display = 'none';
         document.getElementById('menu').style.display = 'block';
@@ -32,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('zeigeAnleitung').style.display = 'block';
     });
     
-    // Button, um von der Anleitung zur Startseite zurückzukehren
     document.getElementById('backToMenu2').addEventListener('click', function() {
         document.getElementById('Anleitung').style.display = 'none';
         document.getElementById('menu').style.display = 'block';
@@ -40,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('zeigeAnleitung').style.display = 'block';
     });
 
-    // Funktion zur Benachrichtigung
     const notificationArea = document.createElement('div');
     notificationArea.setAttribute('id', 'notification');
     document.body.appendChild(notificationArea);
@@ -61,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 2000);
     }
 
-    // Funktion, um eine zufällige Stadt auszuwählen und Wetterdaten abzurufen
     function generateLocation() {
         fetch('Countries/Cities.json')
             .then(response => response.json())
@@ -71,7 +65,6 @@ document.addEventListener('DOMContentLoaded', function() {
             .catch(error => console.error('Fehler beim Abrufen der Städte:', error));
     }
 
-    // Funktion, um eine gültige Stadt mit Wetterdaten auszuwählen
     function selectValidCity(cities) {
         if (!cities || cities.length === 0) {
             console.error('Keine Städte gefunden.');
@@ -89,18 +82,17 @@ document.addEventListener('DOMContentLoaded', function() {
                         fetchWeather();
                     } else {
                         showNotification(`Stadt ${city} übersprungen, da keine Wetterdaten verfügbar.`);
-                        tryCity(); // Nächste Stadt versuchen
+                        tryCity();
                     }
                 })
                 .catch(error => console.error('Fehler bei der Wetterprüfung:', error));
         }
 
-        tryCity(); // Starte den ersten Versuch
+        tryCity();
     }
 
-    // Funktion, um zu überprüfen, ob eine Stadt Wetterdaten hat
     function checkWeatherForCity(city) {
-        const apiKey = '6c57147cf6b448a48df84931242308'; // Dein API-Schlüssel
+        const apiKey = '6c57147cf6b448a48df84931242308';
         const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=1&aqi=yes&alerts=yes`;
 
         return fetch(url)
@@ -108,12 +100,11 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(data => {
                 return data && data.location && data.current;
             })
-            .catch(() => false); // Rückgabewert bei Fehler
+            .catch(() => false);
     }
     
-    // Funktion, um das Wetter für die ausgewählte Stadt abzurufen
     function fetchWeather() {
-        const apiKey = '6c57147cf6b448a48df84931242308'; // Dein API-Schlüssel
+        const apiKey = '6c57147cf6b448a48df84931242308';
         const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${selectedCity}&days=1&aqi=yes&alerts=yes`;
 
         fetch(url)
@@ -152,22 +143,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('pm25').textContent = `Feinstaub (PM2.5): ${pm25} µg/m³`;
                 document.getElementById('pm10').textContent = `Grober Feinstaub (PM10): ${pm10} µg/m³`;
 
-                // Karte aktualisieren
                 updateMap(location.lat, location.lon);
             })
             .catch(error => console.error('Fehler beim Abrufen der Wetterdaten:', error));
 
     }
 
-    // Google Maps initialisieren
     window.initMap = function() {
         map = new google.maps.Map(document.getElementById('map'), {
-            center: { lat: 0, lng: 0 }, // Initialer Mittelpunkt
-            zoom: 2, // Start-Zoom
+            center: { lat: 0, lng: 0 },
+            zoom: 2,
         });
         mapReady = true;
 
-        // Event-Listener für das Setzen des Markers
+        // Setzen des Markers
         map.addListener('click', function(event) {
             if (!guessMarker) {
                 guessMarker = new google.maps.Marker({
@@ -182,7 +171,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     };
 
-    // Karte aktualisieren mit neuer Position
     function updateMap(lat, lon) {
         const position = { lat: lat, lng: lon };
 
@@ -190,7 +178,7 @@ document.addEventListener('DOMContentLoaded', function() {
         map.setCenter(0, 0);
         map.setZoom(4);
 
-        // Wenn bereits ein Marker vorhanden ist, entferne ihn
+        // Wenn bereits ein Marker vorhanden ist entfernen
         if (marker) {
             marker.setMap(null);
         }
@@ -204,7 +192,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Berechne die Distanz zwischen zwei Punkten
     function calculateDistance(lat1, lon1, lat2, lon2) {
         const R = 6371; // Radius der Erde in Kilometern
         const dLat = (lat2 - lat1) * Math.PI / 180;
@@ -228,7 +215,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const guessLat = guessMarker.getPosition().lat();
         const guessLng = guessMarker.getPosition().lng();
 
-        // Fetch the generated city data to get its coordinates
         fetch(`https://api.weatherapi.com/v1/forecast.json?key=6c57147cf6b448a48df84931242308&q=${selectedCity}&days=1`)
             .then(response => response.json())
             .then(data => {
@@ -246,24 +232,24 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('selected-city').style.display = 'block';
                 document.getElementById('selected-city').textContent = `Ausgewählte Stadt: ${selectedCity}`;
 
-                // Karte aktualisieren, um die Stadt anzuzeigen
+                // Karte aktualisieren um die Stadt anzuzeigen
                 if (!marker) {
                     marker = new google.maps.Marker({
                         position: { lat: generatedLat, lng: generatedLng },
                         icon: customCityIcon,
                         map: map,
-                        visible: true // Stelle sicher, dass der Marker sichtbar ist
+                        visible: true
                     });
                 } else {
                     marker.setPosition({ lat: generatedLat, lng: generatedLng });
-                    marker.setVisible(true); // Mache den Marker sichtbar
+                    marker.setVisible(true);
                 }
 
                 // Karte zentrieren und zoomen
                 map.setCenter({ lat: generatedLat, lng: generatedLng });
                 map.setZoom(10);
 
-                // Deaktiviere die Möglichkeit, den Marker zu ändern
+                // Deaktivieren der Möglichkeit, den Marker zu ändern
                 google.maps.event.clearListeners(map, 'click');
                 document.getElementById('nextRound').style.display = 'block';
             })
@@ -271,7 +257,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
-    // Event-Listener für den Button zur nächsten Runde
     document.getElementById('nextRound').addEventListener('click', function() {
         // Reset der Variablen und UI
         selectedCity = '';
@@ -304,7 +289,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         generateLocation();
 
-        // Re-enable map clicks
         map.addListener('click', function(event) {
             if (!guessMarker) {
                 guessMarker = new google.maps.Marker({

@@ -1,12 +1,10 @@
-/* Allgemeine Stile */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f7f3; /* Beigegrauer Hintergrund */
+    background-color: #f9f7f3;
     margin: 0;
     padding: 0;
 }
 
-/* Menü-Stil */
 .menu {
     text-align: center;
     margin-top: 50px;
@@ -14,13 +12,13 @@ body {
 
 .menu h1 {
     font-size: 36px;
-    color: #333; /* Dunkelgraue Haupttextfarbe */
+    color: #333;
     margin-bottom: 20px;
 }
 
 .menu p {
     font-size: 18px;
-    color: #666; /* Mittelgrauer Fließtext */
+    color: #666;
     margin: 10px 0 30px;
 }
 
@@ -36,7 +34,6 @@ body {
     margin-bottom: 30px;
 }
 
-/* Spielcontainer */
 .container {
     max-width: 1200px;
     margin: 50px auto;
@@ -50,7 +47,6 @@ h1 {
     color: #333;
 }
 
-/* Layout für das Spiel */
 .game-content {
     display: flex;
     justify-content: space-between;
@@ -97,11 +93,10 @@ h1 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Button-Stile */
 .button {
     display: inline-block;
     margin: 20px auto;
-    background-color: #2b7a78; /* Sanftes Grün als Hauptfarbe */
+    background-color: #2b7a78;
     color: white;
     border: none;
     padding: 12px 24px;
@@ -113,7 +108,7 @@ h1 {
 }
 
 .button:hover {
-    background-color: #225560; /* Dunkleres Grün für Hover-Effekt */
+    background-color: #225560;
     transform: scale(1.05);
 }
 
@@ -126,16 +121,17 @@ h1 {
 }
 
 #nextRound {
-    background-color: #6c757d; /* Sanftes Gold für "Nächste Runde" Button */
+    background-color: #557998;
     color: #333;
+    border-radius: 6px;
 }
 
 #nextRound:hover {
-    background-color: #5a6168;
+    background-color: #7b8692;
 }
 
 #guess {
-    background-color: #28a745; /* Leichtes Grün für den Guess-Button */
+    background-color: #28a745;
 }
 
 #guess:hover {

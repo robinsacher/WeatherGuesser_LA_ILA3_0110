@@ -9,7 +9,6 @@
 </head>
 <body>
 
-<!-- Menü -->
 <div class="menu" id="menu">
     <h1>Willkommen bei Weather Guesser!</h1>
     <p>Teste dein Wissen über das Wetter in zufällig ausgewählten Städten.</p>
@@ -20,10 +19,8 @@
     <button class="button" id="startGame">Zum Spiel</button>
     <button class="button" id="zeigeAnleitung">Anleitung</button>
 
-<!-- Spielinhalt (anfangs ausgeblendet) -->
 <div class="container" id="gameContainer" style="display: none;">
     <div class="game-content">
-        <!-- Wetterdaten auf der linken Seite -->
         <div class="weather-section">
             <h1>Stadt-Wetter-Daten</h1>
             <div class="city-info">
@@ -45,17 +42,15 @@
                 <p id="pm10">Grober Feinstaub (PM10): </p>
             </div>
             <button class="button" id="guess">Guess</button>
-            <p id="distance"></p> <!-- Bereich für die Distanzanzeige -->
-            <button id="nextRound" style="display: none;">Nächste Runde</button> <!-- Button für die nächste Runde -->
+            <p id="distance"></p>
+            <button id="nextRound" style="display: none;">Nächste Runde</button>
         </div>
 
-        <!-- Karte auf der rechten Seite -->
         <div class="map-section">
             <div id="map"></div>
         </div>
     </div>
 
-    <!-- Button zur Startseite -->
     <button class="button" id="backToMenu">Zur Startseite</button>
 </div>
 
