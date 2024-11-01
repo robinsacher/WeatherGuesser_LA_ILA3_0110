@@ -7,10 +7,11 @@
 | Datum | Version | Zusammenfassung                                                                                                                          |
 | ----- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
 |   31.08.2024    | 0.0.1   | Jedes Mal, wenn Sie an dem Projekt arbeiten, fügen Sie hier eine neue Zeile ein und beschreiben in _einem_ Satz, was Sie erreicht haben. |
-|   06.09.2024    | 0.1.1   | Elias Spycher hat direkt mit dem Realisiseren des Projekts begonnen, Julian Hitz und Damian Müller haben weiterhin an der Planung gearbeitet.|
-|   13.09.2024    | 1.0.0   | |   
-|   13.09.2024    | 0.0.0   | |
-|   13.09.2024    | 0.0.0   | |
+|   06.09.2024    | 0.1.1   | Elias Spycher hat direkt mit dem Realisiseren des Projekts begonnen, Robin Sacher, Julian Hitz und Damian Müller haben weiterhin an der Planung gearbeitet.|
+|   13.09.2024    | 1.0.0   | Elias Spycher hat die Grundstruktur des programms erstellt und die beiden APIs implementiert, somit kann man jetzt raten und Wetterdaten werden generiert.|   
+|   20.09.2024    | 1.1.0   | |
+|   27.09.2024    | 1.2.0   | |
+|   01.11.2024    | 1.3.0   | |
 
 ## 1 Informieren
 ### 1.1 Ihr Projekt
