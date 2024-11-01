@@ -165,7 +165,7 @@ Ansonsten haben wir uns nicht entschieden, Teile des Projekts wegzulassen oder n
 ✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
 
 ## 6 Auswerten
-Elias Spycher: 
-Robin Sacher: 
-Julian Hitz: 
-Damian Müller: 
+- Elias Spycher: 
+- Robin Sacher: https://portfolio.bbbaden.ch/view/view.php?t=b03c0b95ee77390232cf
+- Julian Hitz: 
+- Damian Müller: 
