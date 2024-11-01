@@ -166,8 +166,8 @@ Ansonsten haben wir uns nicht entschieden, Teile des Projekts wegzulassen oder n
 
 Aktuell sind nicht alle Tests erfolgreich, da die Anzeige der Höhe in Metern über dem Meeresspiegel noch nicht implementiert wurde. Um diese Funktionalität zu realisieren, wäre die Anbindung an eine zusätzliche API erforderlich, die die entsprechenden Daten bereitstellt. Abgesehen von diesem Punkt erfüllen alle anderen Tests die festgelegten Anforderungen.
 
-- Für zukünftige Entwicklungen des Projekts könnte man folgende Erweiterungen implementieren:
-Höhenangabe über den Meeresspiegel: Die Implementierung einer API, die die Höhe eines bestimmten Standorts über dem Meeresspiegel anzeigt, könnte den Nutzern zusätzliche Informationen bietet.
+Für zukünftige Entwicklungen des Projekts könnte man folgende Erweiterungen implementieren:
+- Höhenangabe über den Meeresspiegel: Die Implementierung einer API, die die Höhe eines bestimmten Standorts über dem Meeresspiegel anzeigt, könnte den Nutzern zusätzliche Informationen bietet.
 
 - Erweiterte Standortinformationen: Neben der Höhe könnten auch weitere relevante Daten über den Ort hinzugefügt werden, wie z. B. das Klima oder die Bevölkerungsdichte.
 
