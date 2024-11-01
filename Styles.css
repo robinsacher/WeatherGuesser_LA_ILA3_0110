@@ -126,12 +126,12 @@ h1 {
 }
 
 #nextRound {
-    background-color: #f4c542; /* Sanftes Gold für "Nächste Runde" Button */
+    background-color: #6c757d; /* Sanftes Gold für "Nächste Runde" Button */
     color: #333;
 }
 
 #nextRound:hover {
-    background-color: #e0a800;
+    background-color: #5a6168;
 }
 
 #guess {
