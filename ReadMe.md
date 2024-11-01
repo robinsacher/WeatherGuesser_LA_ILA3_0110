@@ -1,5 +1,4 @@
 # Projekt-Dokumentation
-
 - Spycher Elias
 - Sacher Robin
 - Hitz Julian
@@ -14,15 +13,12 @@
 |   13.09.2024    | 0.0.0   | |
 
 ## 1 Informieren
-
 ### 1.1 Ihr Projekt
-
 In unserem Projekt verwenden Wir 2 APIs, eine Wetter API und eine Map API. Man sollte auf einer Website anhand der Wetterdaten auf einer Map die dazugehörige Stadt erraten.
 
 Wir erhoffen uns in diesem Projekt die Porzesse von DevOps zu vertiefen, weil wir diese gerade in dem Modul 324 behandeln. Ausserdem möchten wir lernen, wie wir eine Webapplikation entwickeln können und wie wir in diese Webapplikation verschiedene API's einbinden können. Dies finden wir sehr interessant und möchten es darum vertiefen.
 
 ### 1.2 User Stories
-
 | US-№ | Verbindlichkeit | Typ           | Beschreibung                                                                                                                                                                                |
 | ---- | --------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1    | Muss            | Funktional    | Als ein User möchte ich, dass die Temperatur der Stadt angezeigt wird, damit ich einschätzen kann, wo ich bin.                                                                              |
@@ -43,7 +39,6 @@ Wir erhoffen uns in diesem Projekt die Porzesse von DevOps zu vertiefen, weil wi
 
 
 ### 1.3 Testfälle
-
 | TC-№ | Ausgangslage              | Eingabe                                            | Erwartete Ausgabe                                                                                         |
 | ---- | ------------------------- | -------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
 | 1.1  | Programm gestartet        | Playbutton wurde gedrückt                          | Temperatur wird in der Liste mit den Informationen angezeigt.              |
@@ -64,11 +59,9 @@ Wir erhoffen uns in diesem Projekt die Porzesse von DevOps zu vertiefen, weil wi
 
 
 ### 1.4 Diagramme
-
 ![WeatherGuesser_LA_ILA3_0110_UseCase drawio](https://github.com/user-attachments/assets/314fefdb-ab93-4f4a-a924-878a20f1aee1)
 
 ## 2 Planen
-
 | AP-№ | Frist      | Zuständig     | Beschreibung                                                                                      | geplante Zeit |
 | ---- | ---------- | ------------- | ------------------------------------------------------------------------------------------------- | ------------- |
 | 1.A  | 27.09.2024 | Robin Sacher  | Integration der Wetter-API zur Abrufung der Temperaturdaten und Implementierung der Anzeige.      | 45 min        |
@@ -108,11 +101,11 @@ Wir erhoffen uns in diesem Projekt die Porzesse von DevOps zu vertiefen, weil wi
 Insgesamt sind es 36 Arbeitspakete.
 
 ## 3 Entscheiden
+Wir haben uns entschieden, auf die Implementierung der Höhenangaben in Metern über Meer (M.ü.M.) zu verzichten, da dafür eine zusätzliche, dritte API erforderlich gewesen wäre. Diese zusätzliche API hätte die Komplexität des Systems erhöht und die Wartbarkeit des Projektes schwieriger gemacht.
 
-Wir haben keine Entscheidungen getroffen.
+Ansonsten haben wir uns nicht entschieden, Teile des Projekts wegzulassen oder neue Funktionen hinzuzufügen.
 
 ## 4 Realisieren
-
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
 | ---- | ----- | --------- | ------------- | ----------------- |
 | 1.A  | 30.08.2024      | Robin Sacher          |   45 min       |                   |
@@ -172,5 +165,7 @@ Wir haben keine Entscheidungen getroffen.
 ✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
 
 ## 6 Auswerten
-
-✍️ Fügen Sie hier eine Verknüpfung zu Ihrem Porfoliobeitrag ein.
+Elias Spycher: 
+Robin Sacher: 
+Julian Hitz: 
+Damian Müller: 
