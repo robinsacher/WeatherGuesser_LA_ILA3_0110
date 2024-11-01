@@ -110,36 +110,36 @@ Ansonsten haben wir uns nicht entschieden, Teile des Projekts wegzulassen oder n
 ## 4 Realisieren
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
 | ---- | ----- | --------- | ------------- | ----------------- |
-| 1.A  | 30.08.2024      | Robin Sacher          |   45 min       |                   |
-| 1.B  | 30.08.2024       | Robin Sacher          |  10 min         |                   |
-| 2.A | 30.08.2024       | Julian Hitz  | 45 min |       |
-| 2.B | 30.08.2024       | Julian Hitz  | 10 min     |       |
-| 3.A | 30.08.2024       | Elias Spycher | 45 min   |       |
-| 3.B | 30.08.2024       | Elias Spycher  | 10 min    |      |
+| 1.A  | 30.08.2024      | Robin Sacher          |   45 min       |  45 min                 |
+| 1.B  | 30.08.2024       | Robin Sacher          |  10 min         | 15 min                  |
+| 2.A | 30.08.2024       | Julian Hitz  | 45 min | 45 min      |
+| 2.B | 30.08.2024       | Julian Hitz  | 10 min     | 20 min      |
+| 3.A | 30.08.2024       | Elias Spycher | 45 min   | 60 min      |
+| 3.B | 30.08.2024       | Elias Spycher  | 10 min    | 15 min     |
 | 4.A |       | Damian Müller  | 45 min |     |
 | 4.B  |       | Damian Müller | 10 min |      |
-| 5.A | 30.08.2024       | Robin Sacher    | 45 min  |         |
-| 5.B | 30.08.2024       | Robin Sacher  | 10 min    |       |
-| 6.A  | 30.08.2024      | Julian Hitz   | 45 min    |        |
-| 6.B  | 30.08.2024      | Julian Hitz   | 10 min   |         |
-| 7.A  |30.08.2024        | Elias Spycher  | 45 min    |        |
-| 7.B  | 30.08.2024      | Elias Spycher  | 10 min  |       |
-| 8.A  | 30.08.2024      | Damian Müller  | 45 min |      |
-| 8.B  |  30.08.2024      | Damian Müller | 10 min  |      |
-| 9.A  | 06.09.2024      | Robin Sacher   | 45 min  |       |
-| 9.B |  06.09.2024     | Robin Sacher    | 10 min   |       |
-| 10.A  | 06.09.2024    | Julian Hitz    | 45 min   |       |
-| 10.B |  06.09.2024    | Julian Hitz    | 10 min   |       |
-| 11.A | 06.09.2024      | Elias Spycher | 45 min    |      |
-| 11.B | 06.09.2024     | Elias Spycher  | 10 min    |      |
-| 12.A | 06.09.2024     | Damian Müller  | 45 min    |      |
-| 12.B | 06.09.2024     | Damian Müller  | 10 min    |      |
-| 13.A  | 13.09.2024    | Robin Sacher    | 45 min   |       |
-| 13.B  | 13.09.2024    | Robin Sacher   | 10 min     |     |
-| 14.A  | 13.09.2024     | Julian Hitz   | 45 min    |      |
-| 14.B  | 13.09.2024    | Julian Hitz    | 10 min    |      |
-| 15.A  | 13.09.2024| Elias Spycher | 45 min    |      |
-| 15.B  | 13.09.2024     | Elias Spycher | 10 min    |      |
+| 5.A | 30.08.2024       | Robin Sacher    | 45 min  | 60 min        |
+| 5.B | 30.08.2024       | Robin Sacher  | 10 min    | 15 min      |
+| 6.A  | 30.08.2024      | Julian Hitz   | 45 min    | 60 min      |
+| 6.B  | 30.08.2024      | Julian Hitz   | 10 min   | 15 min        |
+| 7.A  |30.08.2024        | Elias Spycher  | 45 min    | 60 min       |
+| 7.B  | 30.08.2024      | Elias Spycher  | 10 min  | 15 min      |
+| 8.A  | 30.08.2024      | Damian Müller  | 45 min | 40 min     |
+| 8.B  |  30.08.2024      | Damian Müller | 10 min  | 15 min     |
+| 9.A  | 06.09.2024      | Robin Sacher   | 45 min  | 50 min      |
+| 9.B |  06.09.2024     | Robin Sacher    | 10 min   | 20 min      |
+| 10.A  | 06.09.2024    | Julian Hitz    | 45 min   | 50 min      |
+| 10.B |  06.09.2024    | Julian Hitz    | 10 min   | 15 min      |
+| 11.A | 06.09.2024      | Elias Spycher | 45 min    | 60 min     |
+| 11.B | 06.09.2024     | Elias Spycher  | 10 min    | 20 min     |
+| 12.A | 06.09.2024     | Damian Müller  | 45 min    | 50 min     |
+| 12.B | 06.09.2024     | Damian Müller  | 10 min    | 15 min     |
+| 13.A  | 13.09.2024    | Robin Sacher    | 45 min   |  40 min     |
+| 13.B  | 13.09.2024    | Robin Sacher   | 10 min     | 20 min    |
+| 14.A  | 13.09.2024     | Julian Hitz   | 45 min    | 50 min     |
+| 14.B  | 13.09.2024    | Julian Hitz    | 10 min    | 15 min     |
+| 15.A  | 13.09.2024| Elias Spycher | 45 min    | 50 min     |
+| 15.B  | 13.09.2024     | Elias Spycher | 10 min    | 15 min     |
 
 
 ✍️ Tragen Sie jedes Mal, wenn Sie ein Arbeitspaket abschließen, hier ein, wie lang Sie effektiv dafür hatten.
