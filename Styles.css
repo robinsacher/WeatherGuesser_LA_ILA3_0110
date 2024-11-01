@@ -120,20 +120,14 @@ h1 {
     background-color: #5a6268;
 }
 
+#guess,
 #nextRound {
-    background-color: #557998;
-    color: #333;
+    background-color: #28a745;
+    color: #ffffff;
     border-radius: 6px;
 }
 
+#guess:hover,
 #nextRound:hover {
-    background-color: #7b8692;
-}
-
-#guess {
-    background-color: #28a745;
-}
-
-#guess:hover {
-    background-color: #218838;
+    background-color: #4573ff;
 }
